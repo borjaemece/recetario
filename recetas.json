@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "nombre": "Gazpacho andaluz",
+    "categoria": "Entrante",
+    "emoji": "🍅",
+    "tipo": "texto",
+    "ingredientes": [
+      "1 kg tomates maduros",
+      "1 pepino",
+      "1 pimiento verde",
+      "2 dientes de ajo",
+      "50ml aceite de oliva virgen extra",
+      "20ml vinagre de jerez",
+      "Sal al gusto"
+    ],
+    "pasos": [
+      "Trocear todas las verduras en trozos grandes.",
+      "Batir en batidora hasta obtener una textura suave y homogénea.",
+      "Colar con un colador fino si se desea más suave.",
+      "Añadir aceite, vinagre y sal. Volver a batir brevemente.",
+      "Enfriar mínimo 2 horas en nevera antes de servir."
+    ],
+    "notas": "Mejor de un día para otro. Servir con guarnición de pepino, pimiento y cebolla picados."
+  },
+  {
+    "id": 2,
+    "nombre": "Pasta carbonara",
+    "categoria": "Principal",
+    "emoji": "🍝",
+    "tipo": "enlace",
+    "url": "https://www.recetasderechupete.com/carbonara-receta-original-italiana/2088/",
+    "notas": "Sin nata — receta italiana auténtica. Usar guanciale si es posible."
+  },
+  {
+    "id": 3,
+    "nombre": "Tarta de queso vasca",
+    "categoria": "Postre",
+    "emoji": "🧀",
+    "tipo": "texto",
+    "ingredientes": [
+      "500g queso crema (Philadelphia)",
+      "3 huevos",
+      "200g azúcar",
+      "200ml nata para montar",
+      "2 cucharadas de harina"
+    ],
+    "pasos": [
+      "Precalentar horno a 200°C con calor arriba y abajo.",
+      "Batir todos los ingredientes juntos hasta obtener una mezcla lisa.",
+      "Forrar un molde de 20cm con papel de horno húmedo.",
+      "Verter la mezcla y hornear 40-45 minutos.",
+      "Dejar enfriar a temperatura ambiente y luego refrigerar al menos 4 horas."
+    ],
+    "notas": "La textura perfecta es cuando aún tiembla ligeramente en el centro al sacarla del horno."
+  }
+]
