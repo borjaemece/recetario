@@ -1,57 +1,75 @@
 [
   {
     "id": 1,
-    "nombre": "Gazpacho andaluz",
-    "categoria": "Entrante",
-    "emoji": "🍅",
+    "nombre": "Rendang de pollo",
+    "categoria": "Principal",
+    "emoji": "🍗",
     "tipo": "texto",
     "ingredientes": [
-      "1 kg tomates maduros",
-      "1 pepino",
-      "1 pimiento verde",
-      "2 dientes de ajo",
-      "50ml aceite de oliva virgen extra",
-      "20ml vinagre de jerez",
-      "Sal al gusto"
+      "800g muslo (en piezas) o alitas de pollo",
+      "100g chalota",
+      "30g galangal",
+      "2 tallos de citronela",
+      "20g jengibre",
+      "10-15 chiles secos enteros (tailandeses o chinos)",
+      "4 dientes de ajo",
+      "1 anís estrellado",
+      "1 rama de canela",
+      "4 vainas de cardamomo verde",
+      "4 clavos",
+      "1 taza de leche de coco",
+      "2 cucharadas de azúcar de coco",
+      "30g coco rallado",
+      "5 hojas de lima kaffir ralladas",
+      "1 cucharadita de sal",
+      "4 cucharadas de aceite de oliva"
     ],
     "pasos": [
-      "Trocear todas las verduras en trozos grandes.",
-      "Batir en batidora hasta obtener una textura suave y homogénea.",
-      "Colar con un colador fino si se desea más suave.",
-      "Añadir aceite, vinagre y sal. Volver a batir brevemente.",
-      "Enfriar mínimo 2 horas en nevera antes de servir."
+      "Hidratar los chiles en un bol con agua caliente durante 15-20 minutos. Guardar el agua de chile aparte.",
+      "Poner la chalota, el galangal, la citronela, el jengibre, el chile, el ajo y la sal en una picadora. Picar todo hasta obtener un puré (se puede añadir un poco del agua de chile para ayudar).",
+      "En una sartén grande, calentar el aceite a fuego medio. Añadir el puré de especias, el anís estrellado, la canela, el cardamomo y el clavo. Saltear constantemente hasta obtener una pasta espesa y caramelizada.",
+      "Añadir las piezas de pollo y mezclarlas bien con las especias. Incorporar la leche de coco y el azúcar de coco.",
+      "En otra sartén, tostar el coco rallado a fuego medio hasta que esté dorado.",
+      "Añadir el coco tostado y las hojas de lima kaffir al pollo. Cocinar a fuego lento durante 20-30 minutos, removiendo de vez en cuando.",
+      "Servir con arroz."
     ],
-    "notas": "Mejor de un día para otro. Servir con guarnición de pepino, pimiento y cebolla picados."
+    "notas": "Receta del libro 'Cocina Picante de Asia' de Jenny Chih-Chieh Teng. El secreto está en reducir bien la pasta de especias antes de añadir el pollo."
   },
   {
     "id": 2,
-    "nombre": "Pasta carbonara",
-    "categoria": "Principal",
-    "emoji": "🍝",
-    "tipo": "enlace",
-    "url": "https://www.recetasderechupete.com/carbonara-receta-original-italiana/2088/",
-    "notas": "Sin nata — receta italiana auténtica. Usar guanciale si es posible."
-  },
-  {
-    "id": 3,
-    "nombre": "Tarta de queso vasca",
-    "categoria": "Postre",
-    "emoji": "🧀",
+    "nombre": "Satay tailandés de ternera",
+    "categoria": "Entrante",
+    "emoji": "🍢",
     "tipo": "texto",
     "ingredientes": [
-      "500g queso crema (Philadelphia)",
-      "3 huevos",
-      "200g azúcar",
-      "200ml nata para montar",
-      "2 cucharadas de harina"
+      "350g bistec de ternera",
+      "3-4 chiles thai secos",
+      "2/3 cucharadita de semillas de cilantro",
+      "1/2 cucharadita de semillas de comino",
+      "1/4 cucharadita de pimienta negra",
+      "1/4 cucharadita de cúrcuma en polvo",
+      "1/2 cucharadita de azúcar de palma",
+      "1/3 taza de leche de coco",
+      "1/4 cucharadita de sal",
+      "2 cucharadas de aceite vegetal",
+      "16-18 brochetas de bambú",
+      "--- Para la salsa ---",
+      "3 cucharadas de pasta de curry rojo tailandesa",
+      "2/3 taza de leche de coco",
+      "1 cucharada de crema de cacahuete (opcional)",
+      "1/2 cucharadita de salsa de pescado",
+      "1 cucharadita de azúcar de palma",
+      "3-4 cucharadas de cacahuete tostado y picado"
     ],
     "pasos": [
-      "Precalentar horno a 200°C con calor arriba y abajo.",
-      "Batir todos los ingredientes juntos hasta obtener una mezcla lisa.",
-      "Forrar un molde de 20cm con papel de horno húmedo.",
-      "Verter la mezcla y hornear 40-45 minutos.",
-      "Dejar enfriar a temperatura ambiente y luego refrigerar al menos 4 horas."
+      "Remojar las brochetas de bambú en agua durante 15-30 minutos. Cortar la ternera en trozos de 3-4 cm y 0,5 cm de grosor.",
+      "Tostar los chiles, las semillas de cilantro, el comino y la pimienta negra en una sartén. Macharlos en un mortero junto con la cúrcuma, el azúcar de palma y la sal.",
+      "Mezclar las especias machacadas con la leche de coco. Marinar la carne con esta mezcla durante al menos una hora.",
+      "Preparar la salsa: calentar la mitad de la leche de coco en una sartén pequeña, añadir la pasta de curry rojo y saltear hasta que esté espesa. Incorporar el resto de la leche de coco, los cacahuetes, la crema de cacahuete, la salsa de pescado y el azúcar de palma. Cocer unos minutos hasta espesar y retirar del fuego.",
+      "Pinchar 3 trozos de carne en cada brocheta de bambú.",
+      "Calentar una sartén tipo parrilla a fuego medio-alto. Cocinar las brochetas hasta que estén doradas por ambos lados.",
+      "Servir inmediatamente con la salsa caliente."
     ],
-    "notas": "La textura perfecta es cuando aún tiembla ligeramente en el centro al sacarla del horno."
+    "notas": "Receta del libro 'Cocina Picante de Asia' de Jenny Chih-Chieh Teng. Sale para 16-18 brochetas. La marinada mínimo 1 hora, pero si puedes dejarla toda la noche, mucho mejor."
   }
 ]
