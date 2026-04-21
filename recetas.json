@@ -3,6 +3,7 @@
     "id": 1,
     "nombre": "Rendang de pollo",
     "categoria": "Principal",
+    "subcategoria": "Cocina asiática picante",
     "emoji": "🍗",
     "tipo": "texto",
     "ingredientes": [
@@ -17,7 +18,7 @@
       "1 rama de canela",
       "4 vainas de cardamomo verde",
       "4 clavos",
-      "1 taza de leche de coco",
+      "1 taza (240ml) de leche de coco",
       "2 cucharadas de azúcar de coco",
       "30g coco rallado",
       "5 hojas de lima kaffir ralladas",
@@ -39,6 +40,7 @@
     "id": 2,
     "nombre": "Satay tailandés de ternera",
     "categoria": "Entrante",
+    "subcategoria": "Cocina asiática picante",
     "emoji": "🍢",
     "tipo": "texto",
     "ingredientes": [
@@ -49,13 +51,13 @@
       "1/4 cucharadita de pimienta negra",
       "1/4 cucharadita de cúrcuma en polvo",
       "1/2 cucharadita de azúcar de palma",
-      "1/3 taza de leche de coco",
+      "1/3 taza (80ml) de leche de coco",
       "1/4 cucharadita de sal",
       "2 cucharadas de aceite vegetal",
       "16-18 brochetas de bambú",
       "--- Para la salsa ---",
       "3 cucharadas de pasta de curry rojo tailandesa",
-      "2/3 taza de leche de coco",
+      "2/3 taza (160ml) de leche de coco",
       "1 cucharada de crema de cacahuete (opcional)",
       "1/2 cucharadita de salsa de pescado",
       "1 cucharadita de azúcar de palma",
@@ -75,7 +77,8 @@
   {
     "id": 3,
     "nombre": "Chutney de berenjena (Brinjal Pickle)",
-    "categoria": "Otro",
+    "categoria": "Salsa",
+    "subcategoria": "Web",
     "emoji": "🍆",
     "tipo": "texto",
     "ingredientes": [
@@ -84,7 +87,7 @@
       "150 ml de aceite de girasol o de oliva suave",
       "6 dientes de ajo, pelados y picados",
       "6 cm de jengibre fresco, pelado y picado",
-      "2 cucharaditas de semillas de comino, cilantro, mostaza y copos de chile*",
+      "2 cucharaditas de semillas de comino, cilantro, mostaza y copos de chile",
       "1 cucharada de semillas de fenogreco",
       "1 cucharada de cúrcuma",
       "1/4 cucharadita de asafétida",
@@ -104,17 +107,18 @@
       "Incorporar la berenjena y mezclar bien. Cocinar hasta que la berenjena esté tierna (15-20 minutos).",
       "Envasar en tarros de vidrio esterilizados y dejar madurar durante 1 mes."
     ],
-    "notas": "Receta de Muntsa Holgado (Cuinant Cultures). *Variante: se puede usar la mezcla 'pickle masala' con comino y cilantro (4 cucharadas en total), sin añadir el fenogreco, la cúrcuma ni la asafétida. Hay que dejarlo madurar al menos 1 mes antes de consumirlo."
+    "notas": "Receta de Muntsa Holgado (Cuinant Cultures). Variante: se puede usar la mezcla 'pickle masala' con comino y cilantro (4 cucharadas en total), sin añadir el fenogreco, la cúrcuma ni la asafétida. Hay que dejarlo madurar al menos 1 mes antes de consumirlo."
   },
   {
     "id": 4,
     "nombre": "Raita de cilantro y menta",
     "categoria": "Entrante",
+    "subcategoria": "Web",
     "emoji": "🌿",
     "tipo": "texto",
     "ingredientes": [
       "1-2 yogures naturales (tipo griego también vale)",
-      "1 taza de cilantro fresco picado",
+      "1 taza (aprox. 30g) de cilantro fresco picado",
       "2 cucharadas de hojas de menta",
       "1 diente de ajo, pelado y picado",
       "1 chile verde (opcional)",
@@ -135,6 +139,7 @@
     "id": 5,
     "nombre": "Arroz pilaf",
     "categoria": "Principal",
+    "subcategoria": "Web",
     "emoji": "🍚",
     "tipo": "texto",
     "ingredientes": [
@@ -164,6 +169,7 @@
     "id": 6,
     "nombre": "Curry de berenjena con masala",
     "categoria": "Principal",
+    "subcategoria": "Web",
     "emoji": "🍛",
     "tipo": "texto",
     "ingredientes": [
