@@ -78,7 +78,7 @@
     "id": 3,
     "nombre": "Chutney de berenjena (Brinjal Pickle)",
     "categoria": "Salsa",
-    "subcategoria": "Web",
+    "subcategoria": "Cocina india",
     "emoji": "🍆",
     "tipo": "texto",
     "ingredientes": [
@@ -113,7 +113,7 @@
     "id": 4,
     "nombre": "Raita de cilantro y menta",
     "categoria": "Entrante",
-    "subcategoria": "Web",
+    "subcategoria": "Cocina india",
     "emoji": "🌿",
     "tipo": "texto",
     "ingredientes": [
@@ -139,7 +139,7 @@
     "id": 5,
     "nombre": "Arroz pilaf",
     "categoria": "Principal",
-    "subcategoria": "Web",
+    "subcategoria": "Cocina india",
     "emoji": "🍚",
     "tipo": "texto",
     "ingredientes": [
@@ -169,7 +169,7 @@
     "id": 6,
     "nombre": "Curry de berenjena con masala",
     "categoria": "Principal",
-    "subcategoria": "Web",
+    "subcategoria": "Cocina india",
     "emoji": "🍛",
     "tipo": "texto",
     "ingredientes": [
