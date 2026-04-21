@@ -71,5 +71,134 @@
       "Servir inmediatamente con la salsa caliente."
     ],
     "notas": "Receta del libro 'Cocina Picante de Asia' de Jenny Chih-Chieh Teng. Sale para 16-18 brochetas. La marinada mínimo 1 hora, pero si puedes dejarla toda la noche, mucho mejor."
+  },
+  {
+    "id": 3,
+    "nombre": "Chutney de berenjena (Brinjal Pickle)",
+    "categoria": "Otro",
+    "emoji": "🍆",
+    "tipo": "texto",
+    "ingredientes": [
+      "1,5 kg de berenjenas, lavadas y cortadas en daditos pequeños",
+      "2 cucharadas de sal",
+      "150 ml de aceite de girasol o de oliva suave",
+      "6 dientes de ajo, pelados y picados",
+      "6 cm de jengibre fresco, pelado y picado",
+      "2 cucharaditas de semillas de comino, cilantro, mostaza y copos de chile*",
+      "1 cucharada de semillas de fenogreco",
+      "1 cucharada de cúrcuma",
+      "1/4 cucharadita de asafétida",
+      "2 cucharadas de pulpa de tamarindo (remojada en 1/2 vaso de agua y sin pepitas) o 1 cucharada de pasta de tamarindo",
+      "1 puñado de hojas de curry",
+      "150 g de azúcar",
+      "300 ml de vinagre de manzana"
+    ],
+    "pasos": [
+      "Salar las berenjenas y dejarlas sudar durante un mínimo de 30 minutos. Pasado este tiempo, enjuagarlas y escurrirlas bien para eliminar el exceso de agua.",
+      "Hacer una pasta con el ajo y el jengibre.",
+      "Calentar el aceite en una cazuela y freír la berenjena en varias tandas. Reservar.",
+      "En el mismo aceite, freír la pasta de ajo y jengibre durante 3-4 minutos.",
+      "Añadir las especias (se pueden triturar previamente en un molinillo) y freír durante un par de minutos.",
+      "Añadir el vinagre y el tamarindo y remover durante 1 minuto.",
+      "Añadir las hojas de curry y el azúcar, y remover bien hasta que el azúcar se haya disuelto.",
+      "Incorporar la berenjena y mezclar bien. Cocinar hasta que la berenjena esté tierna (15-20 minutos).",
+      "Envasar en tarros de vidrio esterilizados y dejar madurar durante 1 mes."
+    ],
+    "notas": "Receta de Muntsa Holgado (Cuinant Cultures). *Variante: se puede usar la mezcla 'pickle masala' con comino y cilantro (4 cucharadas en total), sin añadir el fenogreco, la cúrcuma ni la asafétida. Hay que dejarlo madurar al menos 1 mes antes de consumirlo."
+  },
+  {
+    "id": 4,
+    "nombre": "Raita de cilantro y menta",
+    "categoria": "Entrante",
+    "emoji": "🌿",
+    "tipo": "texto",
+    "ingredientes": [
+      "1-2 yogures naturales (tipo griego también vale)",
+      "1 taza de cilantro fresco picado",
+      "2 cucharadas de hojas de menta",
+      "1 diente de ajo, pelado y picado",
+      "1 chile verde (opcional)",
+      "1/2 cucharadita de comino en polvo",
+      "Un chorrito de limón",
+      "Sal"
+    ],
+    "pasos": [
+      "Lavar muy bien las hojas de cilantro y menta (también se pueden escaldar durante 5 segundos y enfriarlas con agua y hielo).",
+      "Poner todos los ingredientes en una batidora, excepto el yogur, y triturar hasta obtener una pasta fina y homogénea.",
+      "Mezclar un par de cucharadas de la pasta con el yogur y ajustar de sal al gusto.",
+      "El resto de la pasta de cilantro y menta se puede congelar para otro momento.",
+      "Se conserva bien en la nevera hasta 3 días si se añade un chorrito de aceite de oliva por encima."
+    ],
+    "notas": "Receta de Muntsa Holgado (Cuinant Cultures). También se puede comer sin el yogur, como salsa verde. La pasta sobrante congela perfectamente en cubiteras para usar en porciones."
+  },
+  {
+    "id": 5,
+    "nombre": "Arroz pilaf",
+    "categoria": "Principal",
+    "emoji": "🍚",
+    "tipo": "texto",
+    "ingredientes": [
+      "300 ml de arroz basmati",
+      "1 cucharadita de sal",
+      "1 cucharadita de aceite de oliva",
+      "1 cebolla pequeña, pelada y cortada en rodajas finas",
+      "1 rama de canela",
+      "8 granos de cardamomo verde, ligeramente aplastados",
+      "1 hoja de laurel",
+      "400 ml de agua o caldo de pollo o vegetal (aproximadamente)"
+    ],
+    "pasos": [
+      "Lavar bien el arroz para eliminar el almidón, hasta que el agua salga clara (se puede omitir este paso).",
+      "En una sartén de hierro, calentar el aceite.",
+      "Añadir la cebolla y saltearla durante 3-4 minutos, hasta que empiece a dorarse.",
+      "Añadir el arroz y remover bien durante 2-3 minutos, hasta que esté transparente.",
+      "Añadir la canela, el cardamomo y la hoja de laurel. Sofreír durante 1 minuto.",
+      "Añadir el agua o el caldo, llevar a ebullición durante 1 minuto y luego tapar y reducir el fuego al mínimo.",
+      "Cocinar sin remover durante 11 minutos (quedará al dente).",
+      "Retirar del fuego y dejar reposar tapado 15 minutos o hasta el momento de servir.",
+      "Separar los granos con un tenedor antes de servir."
+    ],
+    "notas": "Receta de Muntsa Holgado (Cuinant Cultures). Para 4 personas. Se pueden añadir más especias al gusto: unos hilos de azafrán, granos de pimienta, cilantro, hinojo..."
+  },
+  {
+    "id": 6,
+    "nombre": "Curry de berenjena con masala",
+    "categoria": "Principal",
+    "emoji": "🍛",
+    "tipo": "texto",
+    "ingredientes": [
+      "600g de berenjena",
+      "--- Masala ---",
+      "1 cucharadita de semillas de fenogreco",
+      "1 cucharadita de semillas de hinojo",
+      "3 vainas de cardamomo, sin cáscara",
+      "1 rama de canela de 5 cm",
+      "1 hoja de laurel",
+      "3 cm de jengibre fresco, pelado y picado",
+      "3 dientes de ajo, pelados y picados",
+      "--- Resto ---",
+      "2 cebollas, peladas y picadas",
+      "1/2 cucharadita de cúrcuma",
+      "1/2 cucharadita de chile en polvo (opcional)",
+      "1 chile rojo picado (al gusto)",
+      "1 cucharadita de cilantro en polvo",
+      "3 tomates maduros, bien picados",
+      "Sal",
+      "3 cucharadas de aceite de oliva",
+      "Agua",
+      "1 puñado de cilantro fresco picado"
+    ],
+    "pasos": [
+      "Lavar y cortar la berenjena en trozos pequeños. Dejarla en remojo en un bol con agua y sal.",
+      "Para la masala: machacar el ajo y el jengibre en un mortero. Reservar.",
+      "En el mismo mortero, machacar las semillas de fenogreco, hinojo y los cardamomos.",
+      "Calentar el aceite en una sartén e incorporar las especias machacadas junto con la canela y la hoja de laurel. Remover bien hasta que estén bien integradas, luego añadir la cebolla y la pasta de ajo y jengibre.",
+      "Cuando la masala esté bien dorada, añadir la cúrcuma, el chile en polvo, el cilantro en polvo, los tomates picados y el chile rojo.",
+      "Esperar a que el aceite vuelva a subir a la superficie del sofrito y añadir la berenjena bien escurrida.",
+      "Sin dejar de remover, dejar que la berenjena se impregne bien de la masala durante unos 10 minutos, hasta que el aceite vuelva a subir.",
+      "Ajustar de sal, añadir un poco de agua hasta cubrir y dejar cocinar a fuego suave durante 10-15 minutos, hasta que la berenjena esté tierna.",
+      "Añadir el cilantro fresco por encima y servir."
+    ],
+    "notas": "Receta de Muntsa Holgado (Cuinant Cultures). Para 4 personas. También se puede preparar con okra, o mezclar berenjena y okra a partes iguales."
   }
 ]
