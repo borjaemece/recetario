@@ -19,6 +19,9 @@
   --border: #e4dcd2;
   --serif: 'Playfair Display', Georgia, serif;
   --sans: 'DM Sans', sans-serif;
+  --subcat-bg: #eef4f0;
+  --subcat-color: #3a6b4a;
+  --subcat-border: #c5dece;
 }
 
 body {
@@ -79,23 +82,24 @@ header h1 {
 }
 #search::placeholder { color: rgba(249,245,239,0.45); }
 
-/* ── TABS ── */
+/* ── TABS (categorías principales) ── */
 .tabs {
   display: flex;
   overflow-x: auto;
   gap: 6px;
-  padding: 12px 18px;
+  padding: 10px 18px 0;
   background: var(--card);
-  border-bottom: 1px solid var(--border);
+  border-bottom: none;
   scrollbar-width: none;
 }
 .tabs::-webkit-scrollbar { display: none; }
 .tab {
   flex-shrink: 0;
   padding: 5px 14px;
-  border-radius: 6px;
+  border-radius: 6px 6px 0 0;
   border: 1.5px solid var(--border);
-  background: transparent;
+  border-bottom: none;
+  background: var(--bg);
   color: var(--muted);
   font-size: 0.8rem;
   font-family: var(--sans);
@@ -104,9 +108,42 @@ header h1 {
   white-space: nowrap;
 }
 .tab.active {
-  background: var(--text);
-  border-color: var(--text);
-  color: var(--bg);
+  background: var(--card);
+  border-color: var(--border);
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ── SUBTABS (subcategorías) ── */
+.subtabs-wrap {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 18px;
+}
+.subtabs {
+  display: flex;
+  overflow-x: auto;
+  gap: 6px;
+  scrollbar-width: none;
+}
+.subtabs::-webkit-scrollbar { display: none; }
+.subtab {
+  flex-shrink: 0;
+  padding: 4px 11px;
+  border-radius: 20px;
+  border: 1.5px solid var(--subcat-border);
+  background: transparent;
+  color: var(--subcat-color);
+  font-size: 0.75rem;
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.subtab.active {
+  background: var(--subcat-color);
+  border-color: var(--subcat-color);
+  color: white;
   font-weight: 500;
 }
 
@@ -161,6 +198,15 @@ header h1 {
   text-transform: uppercase;
   letter-spacing: 0.6px;
   font-weight: 500;
+}
+.card-subcat {
+  font-size: 0.66rem;
+  color: var(--subcat-color);
+  margin-top: 3px;
+  background: var(--subcat-bg);
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 4px;
 }
 
 /* ── EMPTY ── */
@@ -222,6 +268,7 @@ header h1 {
   line-height: 1.2;
   margin-bottom: 6px;
 }
+.badges { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
 .badge {
   display: inline-block;
   background: var(--accent-light);
@@ -232,7 +279,17 @@ header h1 {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 16px;
+}
+.badge-sub {
+  display: inline-block;
+  background: var(--subcat-bg);
+  color: var(--subcat-color);
+  border-radius: 6px;
+  padding: 3px 10px;
+  font-size: 0.73rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  border: 1px solid var(--subcat-border);
 }
 .modal-section { margin-top: 18px; }
 .modal-section h3 {
@@ -427,15 +484,22 @@ header h1 {
   </div>
 </header>
 
+<!-- Tabs de categorías -->
 <div class="tabs" id="tabs"></div>
+
+<!-- Subtabs de subcategorías -->
+<div class="subtabs-wrap">
+  <div class="subtabs" id="subtabs"></div>
+</div>
+
 <div class="grid" id="grid"><div class="loading">Cargando recetas…</div></div>
 
-<!-- Recipe detail modal -->
+<!-- Modal detalle receta -->
 <div class="overlay" id="overlay" onclick="closeModal(event)">
   <div class="modal" id="modal"></div>
 </div>
 
-<!-- Add recipe form -->
+<!-- Formulario nueva receta -->
 <div class="form-overlay" id="formOverlay" onclick="closeForm(event)">
   <div class="form-modal">
     <div class="modal-header">
@@ -455,6 +519,7 @@ header h1 {
           <option value="Postre">Postre</option>
           <option value="Desayuno">Desayuno</option>
           <option value="Bebida">Bebida</option>
+          <option value="Salsa">Salsa, aliño o condimento</option>
           <option value="Otro">Otro</option>
         </select>
       </div>
@@ -462,6 +527,21 @@ header h1 {
         <label>Emoji</label>
         <input id="f-emoji" type="text" placeholder="🍝" maxlength="2">
       </div>
+    </div>
+    <div class="field">
+      <label>Subcategoría</label>
+      <select id="f-subcat">
+        <option value="">— Sin subcategoría —</option>
+        <option value="Cocina asiática picante">Cocina asiática picante</option>
+        <option value="Cocina taiwanesa">Cocina taiwanesa</option>
+        <option value="Cocina turca">Cocina turca</option>
+        <option value="Cocina coreana">Cocina coreana</option>
+        <option value="Cocina mexicana">Cocina mexicana</option>
+        <option value="Cocina siria">Cocina siria</option>
+        <option value="Dumplings">Dumplings</option>
+        <option value="Hofmann">Hofmann</option>
+        <option value="Web">Web</option>
+      </select>
     </div>
     <div class="field">
       <label>Tipo</label>
@@ -499,25 +579,54 @@ header h1 {
 <button class="fab" onclick="openForm()" aria-label="Añadir receta">+</button>
 
 <script>
-const CATS = ['Todas','Entrante','Principal','Postre','Desayuno','Bebida','Otro'];
-const CAT_EMOJI = { Entrante:'🥗', Principal:'🍽️', Postre:'🍮', Desayuno:'🥐', Bebida:'🥤', Otro:'📌' };
-const TYPE_LABEL = { texto:'Escrita', enlace:'Web', pdf:'PDF' };
+const CATS = ['Todas', 'Entrante', 'Principal', 'Postre', 'Desayuno', 'Bebida', 'Salsa', 'Otro'];
+const CAT_LABELS = {
+  Todas: 'Todas',
+  Entrante: 'Entrantes',
+  Principal: 'Principales',
+  Postre: 'Postres',
+  Desayuno: 'Desayunos',
+  Bebida: 'Bebidas',
+  Salsa: 'Salsas y aliños',
+  Otro: 'Otros'
+};
+const CAT_EMOJI = {
+  Entrante: '🥗',
+  Principal: '🍽️',
+  Postre: '🍮',
+  Desayuno: '🥐',
+  Bebida: '🥤',
+  Salsa: '🫙',
+  Otro: '📌'
+};
+const TYPE_LABEL = { texto: 'Escrita', enlace: 'Web', pdf: 'PDF' };
+
+const SUBCATS = [
+  'Cocina asiática picante',
+  'Cocina taiwanesa',
+  'Cocina turca',
+  'Cocina coreana',
+  'Cocina mexicana',
+  'Cocina siria',
+  'Dumplings',
+  'Hofmann',
+  'Web'
+];
 
 let recipes = [];
 let activeTab = 'Todas';
+let activeSubTab = 'Todas';
 
-// ── Load recipes from JSON file ──
+// ── Cargar recetas ──
 async function loadRecipes() {
   try {
     const res = await fetch('recetas.json');
     if (!res.ok) throw new Error('No se pudo cargar recetas.json');
     recipes = await res.json();
-    // Merge with any locally added recipes (stored in localStorage)
     const local = JSON.parse(localStorage.getItem('recetas_extra') || '[]');
     recipes = [...recipes, ...local];
     render();
   } catch (e) {
-    // Fallback: only local recipes
     recipes = JSON.parse(localStorage.getItem('recetas_extra') || '[]');
     render();
     if (recipes.length === 0) {
@@ -530,23 +639,41 @@ async function loadRecipes() {
 function render() {
   const q = document.getElementById('search').value.toLowerCase();
 
-  // Count
   document.getElementById('count').textContent = recipes.length + ' recetas';
 
-  // Tabs — only show categories that have recipes
+  // ── Tabs de categorías ──
   const usedCats = new Set(recipes.map(r => r.categoria));
   const visibleCats = CATS.filter(c => c === 'Todas' || usedCats.has(c));
   document.getElementById('tabs').innerHTML = visibleCats.map(c =>
-    `<div class="tab${c===activeTab?' active':''}" onclick="setTab('${c}')">${c}</div>`
+    `<div class="tab${c === activeTab ? ' active' : ''}" onclick="setTab('${c}')">${CAT_LABELS[c] || c}</div>`
   ).join('');
 
-  // Filter
+  // ── Subtabs de subcategorías ──
+  // Mostrar solo las subcategorías que tienen recetas en la categoría activa
+  const recipesInCat = recipes.filter(r => activeTab === 'Todas' || r.categoria === activeTab);
+  const usedSubcats = new Set(recipesInCat.map(r => r.subcategoria).filter(Boolean));
+  const visibleSubcats = SUBCATS.filter(s => usedSubcats.has(s));
+
+  const subtabsWrap = document.querySelector('.subtabs-wrap');
+  if (visibleSubcats.length > 0) {
+    subtabsWrap.style.display = '';
+    document.getElementById('subtabs').innerHTML =
+      `<div class="subtab${activeSubTab === 'Todas' ? ' active' : ''}" onclick="setSubTab('Todas')">Todas</div>` +
+      visibleSubcats.map(s =>
+        `<div class="subtab${s === activeSubTab ? ' active' : ''}" onclick="setSubTab('${s}')">${s}</div>`
+      ).join('');
+  } else {
+    subtabsWrap.style.display = 'none';
+  }
+
+  // ── Filtrar recetas ──
   const filtered = recipes.filter(r => {
     const matchCat = activeTab === 'Todas' || r.categoria === activeTab;
+    const matchSub = activeSubTab === 'Todas' || r.subcategoria === activeSubTab;
     const matchQ = !q
       || r.nombre.toLowerCase().includes(q)
       || (r.ingredientes || []).some(i => i.toLowerCase().includes(q));
-    return matchCat && matchQ;
+    return matchCat && matchSub && matchQ;
   });
 
   const grid = document.getElementById('grid');
@@ -562,13 +689,23 @@ function render() {
       </div>
       <div class="card-body">
         <div class="card-name">${r.nombre}</div>
-        <div class="card-cat">${r.categoria}</div>
+        <div class="card-cat">${CAT_LABELS[r.categoria] || r.categoria}</div>
+        ${r.subcategoria ? `<div class="card-subcat">${r.subcategoria}</div>` : ''}
       </div>
     </div>
   `).join('');
 }
 
-function setTab(c) { activeTab = c; render(); }
+function setTab(c) {
+  activeTab = c;
+  activeSubTab = 'Todas'; // reset subcategoría al cambiar categoría
+  render();
+}
+
+function setSubTab(s) {
+  activeSubTab = s;
+  render();
+}
 
 function openModal(id) {
   const r = recipes.find(x => x.id === id);
@@ -580,7 +717,10 @@ function openModal(id) {
     </div>
     <div class="modal-emoji">${r.emoji || CAT_EMOJI[r.categoria] || '🍴'}</div>
     <h2>${r.nombre}</h2>
-    <span class="badge">${r.categoria}</span>
+    <div class="badges">
+      <span class="badge">${CAT_LABELS[r.categoria] || r.categoria}</span>
+      ${r.subcategoria ? `<span class="badge-sub">${r.subcategoria}</span>` : ''}
+    </div>
   `;
   if (r.tipo === 'enlace' || r.tipo === 'pdf') {
     const icon = r.tipo === 'pdf' ? '📄' : '🔗';
@@ -594,7 +734,7 @@ function openModal(id) {
     }
     if (r.pasos?.length) {
       html += `<div class="modal-section"><h3>Elaboración</h3><ul class="steps">
-        ${r.pasos.map((s,i) => `<li><span class="step-num">${i+1}</span><span>${s}</span></li>`).join('')}
+        ${r.pasos.map((s, i) => `<li><span class="step-num">${i + 1}</span><span>${s}</span></li>`).join('')}
       </ul></div>`;
     }
   }
@@ -629,24 +769,24 @@ function saveRecipe() {
     id: Date.now(),
     nombre: name,
     categoria: document.getElementById('f-cat').value,
+    subcategoria: document.getElementById('f-subcat').value || undefined,
     emoji: document.getElementById('f-emoji').value.trim() || CAT_EMOJI[document.getElementById('f-cat').value],
     tipo: type,
     notas: document.getElementById('f-notes').value.trim()
   };
   if (type === 'texto') {
-    r.ingredientes = document.getElementById('f-ingredients').value.split('\n').map(s=>s.trim()).filter(Boolean);
-    r.pasos = document.getElementById('f-steps').value.split('\n').map(s=>s.trim()).filter(Boolean);
+    r.ingredientes = document.getElementById('f-ingredients').value.split('\n').map(s => s.trim()).filter(Boolean);
+    r.pasos = document.getElementById('f-steps').value.split('\n').map(s => s.trim()).filter(Boolean);
   } else {
     r.url = document.getElementById('f-url').value.trim();
   }
-  // Save to localStorage (local additions)
   const local = JSON.parse(localStorage.getItem('recetas_extra') || '[]');
   local.push(r);
   localStorage.setItem('recetas_extra', JSON.stringify(local));
   recipes.push(r);
-  // Reset form
-  ['f-name','f-emoji','f-ingredients','f-steps','f-url','f-notes'].forEach(id => document.getElementById(id).value = '');
+  ['f-name', 'f-emoji', 'f-ingredients', 'f-steps', 'f-url', 'f-notes'].forEach(id => document.getElementById(id).value = '');
   document.getElementById('f-type').value = 'texto';
+  document.getElementById('f-subcat').value = '';
   toggleFields();
   document.getElementById('formOverlay').classList.remove('open');
   render();
