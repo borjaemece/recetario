@@ -291,6 +291,13 @@ header h1 {
   letter-spacing: 0.3px;
   border: 1px solid var(--subcat-border);
 }
+.modal-historia {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 16px;
+  font-style: italic;
+}
 .modal-section { margin-top: 18px; }
 .modal-section h3 {
   font-family: var(--serif);
@@ -534,10 +541,12 @@ header h1 {
         <option value="">— Sin subcategoría —</option>
         <option value="Cocina asiática picante">Cocina asiática picante</option>
         <option value="Cocina taiwanesa">Cocina taiwanesa</option>
+        <option value="Cocina tailandesa">Cocina tailandesa</option>
         <option value="Cocina turca">Cocina turca</option>
         <option value="Cocina coreana">Cocina coreana</option>
         <option value="Cocina mexicana">Cocina mexicana</option>
         <option value="Cocina siria">Cocina siria</option>
+        <option value="Cocina del Magreb">Cocina del Magreb</option>
         <option value="Dumplings">Dumplings</option>
         <option value="Hofmann">Hofmann</option>
         <option value="Web">Web</option>
@@ -605,10 +614,12 @@ const TYPE_LABEL = { texto: 'Escrita', enlace: 'Web', pdf: 'PDF' };
 const SUBCATS = [
   'Cocina asiática picante',
   'Cocina taiwanesa',
+  'Cocina tailandesa',
   'Cocina turca',
   'Cocina coreana',
   'Cocina mexicana',
   'Cocina siria',
+  'Cocina del Magreb',
   'Dumplings',
   'Hofmann',
   'Web',
@@ -651,7 +662,6 @@ function render() {
   ).join('');
 
   // ── Subtabs de subcategorías ──
-  // Mostrar solo las subcategorías que tienen recetas en la categoría activa
   const recipesInCat = recipes.filter(r => activeTab === 'Todas' || r.categoria === activeTab);
   const usedSubcats = new Set(recipesInCat.map(r => r.subcategoria).filter(Boolean));
   const visibleSubcats = SUBCATS.filter(s => usedSubcats.has(s));
@@ -700,7 +710,7 @@ function render() {
 
 function setTab(c) {
   activeTab = c;
-  activeSubTab = 'Todas'; // reset subcategoría al cambiar categoría
+  activeSubTab = 'Todas';
   render();
 }
 
@@ -724,6 +734,9 @@ function openModal(id) {
       ${r.subcategoria ? `<span class="badge-sub">${r.subcategoria}</span>` : ''}
     </div>
   `;
+  if (r.historia) {
+    html += `<p class="modal-historia">${r.historia}</p>`;
+  }
   if (r.tipo === 'enlace' || r.tipo === 'pdf') {
     const icon = r.tipo === 'pdf' ? '📄' : '🔗';
     const label = r.tipo === 'pdf' ? 'Abrir PDF' : 'Ver receta en web';
