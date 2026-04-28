@@ -33,7 +33,7 @@ body {
   background: var(--bg);
   color: var(--negro);
   min-height: 100vh;
-  padding-bottom: 100px;
+  padding-bottom: 140px;
 }
 
 /* ── HEADER ── */
@@ -108,11 +108,9 @@ header h1 {
   background: var(--bg);
   border-bottom: 1px solid var(--gris-borde);
   position: sticky;
-  top: 112px; /* altura del header */
+  top: 112px;
   z-index: 90;
 }
-
-/* Fila 1: tipo de plato */
 .filter-row {
   padding: 10px 16px 8px;
   border-bottom: 1px solid var(--gris-borde);
@@ -161,22 +159,9 @@ header h1 {
   white-space: nowrap;
   line-height: 1.3;
 }
-.pill:hover {
-  background: #E5E5E5;
-  color: var(--negro);
-}
-
-/* Activo fila 1 → rojo */
-.pill.active-cat {
-  background: var(--rojo);
-  color: white;
-}
-
-/* Activo fila 2 → negro */
-.pill.active-org {
-  background: var(--negro);
-  color: white;
-}
+.pill:hover { background: #E5E5E5; color: var(--negro); }
+.pill.active-cat { background: var(--rojo); color: white; }
+.pill.active-org { background: var(--negro); color: white; }
 
 /* ── GRID DE TARJETAS ── */
 .grid {
@@ -230,6 +215,26 @@ header h1 {
   padding: 2px 5px;
   border-radius: 4px;
 }
+
+/* ── TARJETA: INDICADOR COCINADA ── */
+.card-cooked-dot {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 18px;
+  height: 18px;
+  background: #22c55e;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.55rem;
+  color: white;
+  font-weight: 900;
+  line-height: 1;
+}
+.card-name.cooked-name { color: var(--gris-medio); }
 
 .card-body {
   padding: 13px 12px 13px 14px;
@@ -300,10 +305,7 @@ header h1 {
   pointer-events: none;
   transition: opacity 0.25s;
 }
-.overlay.open {
-  opacity: 1;
-  pointer-events: all;
-}
+.overlay.open { opacity: 1; pointer-events: all; }
 .modal {
   background: var(--bg);
   border-radius: 24px 24px 0 0;
@@ -314,9 +316,7 @@ header h1 {
   transform: translateY(40px);
   transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
 }
-.overlay.open .modal {
-  transform: translateY(0);
-}
+.overlay.open .modal { transform: translateY(0); }
 
 .modal-handle {
   display: flex;
@@ -329,7 +329,6 @@ header h1 {
   background: var(--gris-borde);
   border-radius: 2px;
 }
-
 .modal-header {
   display: flex;
   justify-content: flex-end;
@@ -351,12 +350,7 @@ header h1 {
   transition: background 0.15s;
 }
 .modal-close:hover { background: var(--gris-borde); }
-
-.modal-emoji {
-  text-align: center;
-  font-size: 3rem;
-  margin: 8px 0 12px;
-}
+.modal-emoji { text-align: center; font-size: 3rem; margin: 8px 0 12px; }
 .modal h2 {
   font-family: var(--serif);
   font-size: 1.5rem;
@@ -395,6 +389,35 @@ header h1 {
   color: var(--gris-texto);
   border: 1px solid var(--gris-borde);
 }
+
+/* ── MODAL: BOTÓN COCINADA ── */
+.btn-cooked {
+  width: calc(100% - 40px);
+  margin: 0 20px 16px;
+  border: none;
+  padding: 14px;
+  border-radius: 50px;
+  font-size: 0.92rem;
+  font-family: var(--sans);
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: background 0.15s, transform 0.15s;
+  letter-spacing: 0.01em;
+}
+.btn-cooked.pending {
+  background: var(--rojo);
+  color: white;
+  box-shadow: 0 4px 12px rgba(212,43,43,0.3);
+}
+.btn-cooked.pending:hover { background: var(--rojo-oscuro); transform: translateY(-1px); }
+.btn-cooked.done {
+  background: #22c55e;
+  color: white;
+  box-shadow: 0 4px 12px rgba(34,197,94,0.3);
+}
+.btn-cooked.done:hover { background: #16a34a; transform: translateY(-1px); }
+
 .modal-historia {
   font-size: 0.85rem;
   color: var(--gris-texto);
@@ -423,7 +446,6 @@ header h1 {
   transition: background 0.15s, transform 0.15s;
 }
 .modal-link:hover { background: var(--rojo-oscuro); transform: translateY(-1px); }
-
 .modal-meta {
   display: flex;
   gap: 6px;
@@ -440,10 +462,7 @@ header h1 {
   color: var(--gris-texto);
   border: 1px solid var(--gris-borde);
 }
-
-.modal-section {
-  padding: 0 20px 20px;
-}
+.modal-section { padding: 0 20px 20px; }
 .modal-section h3 {
   font-family: var(--serif);
   font-size: 1rem;
@@ -519,7 +538,7 @@ header h1 {
 /* ── FAB ── */
 .fab {
   position: fixed;
-  bottom: 28px;
+  bottom: 82px;
   right: 24px;
   width: 58px;
   height: 58px;
@@ -541,6 +560,187 @@ header h1 {
 }
 .fab:hover { background: var(--rojo-oscuro); transform: scale(1.07); }
 
+/* ── TAB BAR ── */
+.tab-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: var(--bg);
+  border-top: 1px solid var(--gris-borde);
+  display: flex;
+  z-index: 120;
+  height: 62px;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
+}
+.tab-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--sans);
+  padding: 8px 0 10px;
+  transition: color 0.15s;
+  position: relative;
+}
+.tab-item::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 28%; right: 28%;
+  height: 2.5px;
+  background: var(--rojo);
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.tab-item.active::before { opacity: 1; }
+.tab-item .tab-icon { font-size: 1.25rem; line-height: 1; }
+.tab-item .tab-label {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--gris-medio);
+  letter-spacing: 0.04em;
+}
+.tab-item.active .tab-label { color: var(--rojo); }
+
+/* ── VISTA MI PROGRESO ── */
+#progress-view {
+  display: none;
+  padding: 24px 16px 140px;
+}
+.progress-section-title {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--negro);
+  margin-bottom: 22px;
+  text-align: center;
+}
+.donut-wrap {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  margin: 0 auto 20px;
+}
+.donut-svg { width: 170px; height: 170px; }
+.donut-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.donut-pct {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #22c55e;
+  line-height: 1;
+  font-family: var(--sans);
+}
+.donut-sub {
+  font-size: 0.65rem;
+  color: var(--gris-medio);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+}
+.stats-grid {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.stat-card {
+  flex: 1;
+  background: var(--bg-alt);
+  border-radius: 14px;
+  padding: 14px 10px;
+  text-align: center;
+  border: 1.5px solid var(--gris-borde);
+}
+.stat-card .stat-num {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--rojo);
+  line-height: 1;
+  display: block;
+  margin-bottom: 4px;
+}
+.stat-card .stat-num.green { color: #22c55e; }
+.stat-card .stat-lbl {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gris-medio);
+}
+.cooked-section-title {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--negro);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid var(--gris-borde);
+}
+.cooked-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gris-borde);
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.cooked-list-item:hover { opacity: 0.75; }
+.cooked-list-emoji {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: #d4f5d4;
+  flex-shrink: 0;
+}
+.cooked-list-info { flex: 1; min-width: 0; }
+.cooked-list-name {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--negro);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cooked-list-cat {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--rojo);
+  margin-top: 2px;
+}
+.cooked-check {
+  width: 26px;
+  height: 26px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
 /* ── FORM OVERLAY ── */
 .form-overlay {
   position: fixed;
@@ -554,10 +754,7 @@ header h1 {
   pointer-events: none;
   transition: opacity 0.25s;
 }
-.form-overlay.open {
-  opacity: 1;
-  pointer-events: all;
-}
+.form-overlay.open { opacity: 1; pointer-events: all; }
 .form-modal {
   background: var(--bg);
   border-radius: 24px 24px 0 0;
@@ -568,9 +765,7 @@ header h1 {
   transform: translateY(40px);
   transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
 }
-.form-overlay.open .form-modal {
-  transform: translateY(0);
-}
+.form-overlay.open .form-modal { transform: translateY(0); }
 .form-modal h2 {
   font-family: var(--serif);
   font-size: 1.3rem;
@@ -584,10 +779,7 @@ header h1 {
   margin-bottom: 20px;
 }
 .form-header h2 { margin-bottom: 0; }
-
-.field {
-  margin-bottom: 14px;
-}
+.field { margin-bottom: 14px; }
 .field label {
   display: block;
   font-size: 0.72rem;
@@ -609,13 +801,10 @@ header h1 {
   outline: none;
   transition: border-color 0.15s;
 }
-.field input:focus, .field select:focus, .field textarea:focus {
-  border-color: var(--rojo);
-}
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--rojo); }
 .field textarea { resize: vertical; min-height: 80px; }
 .form-row { display: flex; gap: 10px; }
 .form-row .field { flex: 1; }
-
 .btn-save {
   width: 100%;
   background: var(--rojo);
@@ -632,7 +821,6 @@ header h1 {
   transition: background 0.15s, transform 0.15s;
 }
 .btn-save:hover { background: var(--rojo-oscuro); transform: translateY(-1px); }
-
 .btn-cancel {
   width: 100%;
   background: transparent;
@@ -677,22 +865,58 @@ header h1 {
   </div>
 </header>
 
-<!-- FILTROS: DOS FILAS DE PILLS -->
-<div class="filters-wrap">
-  <!-- Fila 1: tipo de plato -->
-  <div class="filter-row">
-    <div class="filter-row-label"><span>🍽️</span> Tipo de plato</div>
-    <div class="pills-scroll" id="pills-cat"></div>
+<!-- VISTA PRINCIPAL: filtros + grid -->
+<div id="main-view">
+  <div class="filters-wrap">
+    <div class="filter-row">
+      <div class="filter-row-label"><span>🍽️</span> Tipo de plato</div>
+      <div class="pills-scroll" id="pills-cat"></div>
+    </div>
+    <div class="filter-row">
+      <div class="filter-row-label"><span>📚</span> Origen</div>
+      <div class="pills-scroll" id="pills-org"></div>
+    </div>
   </div>
-  <!-- Fila 2: origen de la receta -->
-  <div class="filter-row">
-    <div class="filter-row-label"><span>📚</span> Origen</div>
-    <div class="pills-scroll" id="pills-org"></div>
-  </div>
+  <div class="grid" id="grid"><div class="loading">Cargando recetas…</div></div>
 </div>
 
-<!-- Grid -->
-<div class="grid" id="grid"><div class="loading">Cargando recetas…</div></div>
+<!-- VISTA MI PROGRESO -->
+<div id="progress-view">
+  <h2 class="progress-section-title">Mi progreso</h2>
+
+  <div class="donut-wrap">
+    <svg class="donut-svg" viewBox="0 0 170 170" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="85" cy="85" r="62" fill="none" stroke="var(--gris-borde)" stroke-width="22"/>
+      <circle id="donut-circle" cx="85" cy="85" r="62" fill="none" stroke="#22c55e" stroke-width="22"
+        stroke-dasharray="0 389.6"
+        stroke-dashoffset="97.4"
+        stroke-linecap="round"
+        style="transition: stroke-dasharray 0.6s ease;"/>
+    </svg>
+    <div class="donut-center">
+      <span class="donut-pct" id="prog-pct">0%</span>
+      <span class="donut-sub">cocinadas</span>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span class="stat-num green" id="prog-cocinadas">0</span>
+      <span class="stat-lbl">Cocinadas</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" id="prog-pendientes">0</span>
+      <span class="stat-lbl">Pendientes</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" style="color:var(--gris-texto);" id="prog-total">0</span>
+      <span class="stat-lbl">Total</span>
+    </div>
+  </div>
+
+  <h3 class="cooked-section-title">✓ Recetas ya cocinadas</h3>
+  <div id="cooked-recipe-list"></div>
+</div>
 
 <!-- Modal detalle -->
 <div class="overlay" id="overlay" onclick="closeModal(event)">
@@ -708,12 +932,10 @@ header h1 {
       <h2>Nueva receta</h2>
       <button class="modal-close" onclick="document.getElementById('formOverlay').classList.remove('open')">✕</button>
     </div>
-
     <div class="field">
       <label>Nombre *</label>
       <input id="f-name" type="text" placeholder="Ej: Paella valenciana">
     </div>
-
     <div class="form-row">
       <div class="field">
         <label>Categoría *</label>
@@ -733,7 +955,6 @@ header h1 {
         <input id="f-emoji" type="text" placeholder="🍝" maxlength="2">
       </div>
     </div>
-
     <div class="field">
       <label>Subcategoría (origen)</label>
       <select id="f-subcat">
@@ -755,7 +976,6 @@ header h1 {
         <option value="Repostería árabe">Repostería árabe</option>
       </select>
     </div>
-
     <div class="field">
       <label>Tipo</label>
       <select id="f-type" onchange="toggleFields()">
@@ -764,7 +984,6 @@ header h1 {
         <option value="pdf">PDF / Archivo</option>
       </select>
     </div>
-
     <div id="f-text-fields">
       <div class="field">
         <label>Ingredientes (uno por línea)</label>
@@ -775,33 +994,42 @@ header h1 {
         <textarea id="f-steps" placeholder="Mezclar harina con huevos&#10;Hornear 30 min…"></textarea>
       </div>
     </div>
-
     <div id="f-link-fields" style="display:none">
       <div class="field">
         <label>URL</label>
         <input id="f-url" type="url" placeholder="https://…">
       </div>
     </div>
-
     <div class="field">
       <label>Mis notas (opcional)</label>
       <input id="f-notes" type="text" placeholder="Ej: Doblar cantidades para 6 personas">
     </div>
-
     <button class="btn-save" onclick="saveRecipe()">Guardar receta</button>
     <button class="btn-cancel" onclick="document.getElementById('formOverlay').classList.remove('open')">Cancelar</button>
   </div>
 </div>
 
 <!-- FAB -->
-<button class="fab" onclick="openForm()" aria-label="Añadir receta">+</button>
+<button class="fab" id="fab" onclick="openForm()" aria-label="Añadir receta">+</button>
+
+<!-- TAB BAR -->
+<nav class="tab-bar">
+  <button class="tab-item active" id="tab-recetas" data-tab="recetas" onclick="switchTab('recetas')">
+    <span class="tab-icon">📋</span>
+    <span class="tab-label">Recetas</span>
+  </button>
+  <button class="tab-item" id="tab-progreso" data-tab="progreso" onclick="switchTab('progreso')">
+    <span class="tab-icon">📊</span>
+    <span class="tab-label">Mi progreso</span>
+  </button>
+</nav>
 
 <script>
 const CATS = ['Todas', 'Entrante', 'Principal', 'Postre', 'Desayuno', 'Bebida', 'Salsa', 'Acompañamiento', 'Otro'];
 const CAT_LABELS = {
   Todas: 'Todas', Entrante: '🥗 Entrantes', Principal: '🍝 Principales',
   Postre: '🍮 Postres', Desayuno: '🥐 Desayunos', Bebida: '🥤 Bebidas',
-  Salsa: '🫙 Salsas', Acompañamiento: '🥦 Acompañamientos', Otro: '📌 Otros'
+  Salsa: '🫙 Salsas', Acompañamiento: '🥙 Acompañamientos', Otro: '📌 Otros'
 };
 const CAT_LABELS_PLAIN = {
   Todas: 'Todas', Entrante: 'Entrantes', Principal: 'Principales',
@@ -810,30 +1038,41 @@ const CAT_LABELS_PLAIN = {
 };
 const CAT_EMOJI = {
   Entrante: '🥗', Principal: '🍽️', Postre: '🍮',
-  Desayuno: '🥐', Bebida: '🥤', Salsa: '🫙', Acompañamiento: '🥦', Otro: '📌'
+  Desayuno: '🥐', Bebida: '🥤', Salsa: '🫙', Acompañamiento: '🥙', Otro: '📌'
 };
 const CAT_COLOR = {
   Entrante: 'color-rojo', Principal: 'color-naranja', Postre: 'color-amarillo',
-  Desayuno: 'color-amarillo', Bebida: 'color-naranja', Salsa: 'color-rojo', Acompañamiento: 'color-naranja', Otro: 'color-rojo'
+  Desayuno: 'color-amarillo', Bebida: 'color-naranja', Salsa: 'color-rojo',
+  Acompañamiento: 'color-naranja', Otro: 'color-rojo'
 };
 const TYPE_LABEL = { texto: 'Escrita', enlace: 'Web', pdf: 'PDF' };
 
 const SUBCATS = [
   'Cocina asiática picante','Cocina taiwanesa','Cocina tailandesa','Cocina turca',
   'Cocina coreana','Cocina mexicana','Cocina siria','Cocina del Magreb',
-  'Dumplings','Hofmann','Web','Cocina india',
-  'Cocina asiática','Cocina latinoamericana','Repostería árabe'
+  'Dumplings','Hofmann','Web','Cocina india','Cocina asiática',
+  'Cocina latinoamericana','Repostería árabe'
 ];
 
+const GITHUB_REPO = 'borjaemece/recetario';
+const API_PROGRESO_URL = `https://api.github.com/repos/${GITHUB_REPO}/contents/progreso.json`;
+
 let recipes = [];
+let cocidas = new Set();
+let progresoBlobSha = null;
 let activeCat = 'Todas';
 let activeOrg = 'Todos';
 
+// ── CARGA INICIAL ──────────────────────────────────────────
+
 async function loadRecipes() {
   try {
-    const res = await fetch('recetas.json');
-    if (!res.ok) throw new Error();
-    recipes = await res.json();
+    const [recetasRes] = await Promise.all([
+      fetch('recetas.json'),
+      loadProgreso()
+    ]);
+    if (!recetasRes.ok) throw new Error();
+    recipes = await recetasRes.json();
     const local = JSON.parse(localStorage.getItem('recetas_extra') || '[]');
     recipes = [...recipes, ...local];
     render();
@@ -847,23 +1086,181 @@ async function loadRecipes() {
   }
 }
 
+async function loadProgreso() {
+  try {
+    const res = await fetch(API_PROGRESO_URL, {
+      headers: { 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (res.ok) {
+      const data = await res.json();
+      progresoBlobSha = data.sha;
+      const content = JSON.parse(atob(data.content.replace(/\n/g, '')));
+      cocidas = new Set(content.cocinadas || []);
+    }
+  } catch (e) {
+    cocidas = new Set();
+  }
+}
+
+// ── TOKEN GITHUB ───────────────────────────────────────────
+
+function getToken() {
+  let token = sessionStorage.getItem('gh_token');
+  if (!token) {
+    token = prompt('Introduce tu token de GitHub para guardar el progreso:\n(Se guardará solo durante esta sesión del navegador)');
+    if (token && token.trim()) {
+      sessionStorage.setItem('gh_token', token.trim());
+    } else {
+      return null;
+    }
+  }
+  return token;
+}
+
+// ── MARCAR / DESMARCAR COCINADA ────────────────────────────
+
+async function toggleCocinada(id) {
+  const token = getToken();
+  if (!token) return;
+
+  const eraCocinada = cocidas.has(id);
+  if (eraCocinada) {
+    cocidas.delete(id);
+  } else {
+    cocidas.add(id);
+  }
+
+  const ok = await saveProgreso(token);
+  if (!ok) {
+    // Revertir si falla
+    if (eraCocinada) cocidas.add(id); else cocidas.delete(id);
+    sessionStorage.removeItem('gh_token');
+    alert('Error al guardar en GitHub. Puede que el token no sea válido o haya caducado. Inténtalo de nuevo.');
+    return;
+  }
+
+  render();
+  openModal(id);
+}
+
+async function saveProgreso(token) {
+  try {
+    const content = { cocinadas: [...cocidas] };
+    const jsonStr = JSON.stringify(content, null, 2);
+    const encoded = btoa(unescape(encodeURIComponent(jsonStr)));
+
+    const body = {
+      message: 'Actualizar progreso de recetas cocinadas',
+      content: encoded
+    };
+    if (progresoBlobSha) body.sha = progresoBlobSha;
+
+    const res = await fetch(API_PROGRESO_URL, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `token ${token}`,
+        'Content-Type': 'application/json',
+        'Accept': 'application/vnd.github.v3+json'
+      },
+      body: JSON.stringify(body)
+    });
+
+    if (res.ok) {
+      const data = await res.json();
+      progresoBlobSha = data.content.sha;
+      return true;
+    }
+    return false;
+  } catch (e) {
+    return false;
+  }
+}
+
+// ── NAVEGACIÓN ENTRE PESTAÑAS ──────────────────────────────
+
+function switchTab(view) {
+  const mainView = document.getElementById('main-view');
+  const progressView = document.getElementById('progress-view');
+  const fab = document.getElementById('fab');
+
+  if (view === 'recetas') {
+    mainView.style.display = '';
+    progressView.style.display = 'none';
+    fab.style.display = '';
+  } else {
+    mainView.style.display = 'none';
+    progressView.style.display = '';
+    fab.style.display = 'none';
+    renderProgress();
+  }
+
+  document.querySelectorAll('.tab-item').forEach(t => {
+    t.classList.toggle('active', t.dataset.tab === view);
+  });
+  window.scrollTo(0, 0);
+}
+
+// ── RENDERIZAR PANTALLA DE PROGRESO ───────────────────────
+
+function renderProgress() {
+  const total = recipes.length;
+  const cocinadasCount = cocidas.size;
+  const pct = total > 0 ? Math.round(cocinadasCount / total * 100) : 0;
+
+  document.getElementById('prog-cocinadas').textContent = cocinadasCount;
+  document.getElementById('prog-pendientes').textContent = total - cocinadasCount;
+  document.getElementById('prog-total').textContent = total;
+  document.getElementById('prog-pct').textContent = pct + '%';
+
+  // Actualizar gráfico donut (r=62, circunferencia = 2*PI*62 ≈ 389.6)
+  const circ = 2 * Math.PI * 62;
+  const dash = ((pct / 100) * circ).toFixed(1);
+  const gap = (circ - parseFloat(dash)).toFixed(1);
+  document.getElementById('donut-circle').setAttribute('stroke-dasharray', `${dash} ${gap}`);
+
+  // Listado
+  const cocinadasList = recipes.filter(r => cocidas.has(r.id));
+  const listEl = document.getElementById('cooked-recipe-list');
+
+  if (cocinadasList.length === 0) {
+    listEl.innerHTML = '<div class="empty"><strong>Todavía no has cocinado ninguna</strong>Abre una receta y márcala como cocinada.</div>';
+    return;
+  }
+
+  listEl.innerHTML = cocinadasList.map(r => `
+    <div class="cooked-list-item" onclick="abrirDesdeProgreso(${r.id})">
+      <div class="cooked-list-emoji">${r.emoji || CAT_EMOJI[r.categoria] || '🍴'}</div>
+      <div class="cooked-list-info">
+        <div class="cooked-list-name">${r.nombre}</div>
+        <div class="cooked-list-cat">${CAT_LABELS_PLAIN[r.categoria] || r.categoria}${r.subcategoria ? ' · ' + r.subcategoria : ''}</div>
+      </div>
+      <div class="cooked-check">✓</div>
+    </div>
+  `).join('');
+}
+
+function abrirDesdeProgreso(id) {
+  switchTab('recetas');
+  setTimeout(() => openModal(id), 50);
+}
+
+// ── RENDER LISTA ───────────────────────────────────────────
+
 function render() {
   const q = document.getElementById('search').value.toLowerCase();
   document.getElementById('count').textContent = recipes.length + ' recetas';
 
-  // ── Pills categoría (fila 1) ──
+  // Pills categoría
   const usedCats = new Set(recipes.map(r => r.categoria));
   const visibleCats = CATS.filter(c => c === 'Todas' || usedCats.has(c));
   document.getElementById('pills-cat').innerHTML = visibleCats.map(c =>
     `<button class="pill${c === activeCat ? ' active-cat' : ''}" onclick="setCat('${c}')">${CAT_LABELS[c] || c}</button>`
   ).join('');
 
-  // ── Pills origen (fila 2) ──
-  // Solo muestra subcategorías presentes en las recetas de la categoría activa
+  // Pills origen
   const recipesInCat = recipes.filter(r => activeCat === 'Todas' || r.categoria === activeCat);
   const usedOrgs = new Set(recipesInCat.map(r => r.subcategoria).filter(Boolean));
   const visibleOrgs = SUBCATS.filter(s => usedOrgs.has(s));
-
   const orgPillsEl = document.getElementById('pills-org');
   if (visibleOrgs.length > 0) {
     orgPillsEl.innerHTML =
@@ -873,12 +1270,10 @@ function render() {
       ).join('');
     document.getElementById('pills-org').closest('.filter-row').style.display = '';
   } else {
-    // Si no hay subcategorías para mostrar, ocultamos la fila 2
     orgPillsEl.innerHTML = '<button class="pill active-org">Todos</button>';
-    // Igual la dejamos visible por consistencia, con solo "Todos"
   }
 
-  // ── Filtrar recetas ──
+  // Filtrar
   const filtered = recipes.filter(r => {
     const matchCat = activeCat === 'Todas' || r.categoria === activeCat;
     const matchOrg = activeOrg === 'Todos' || r.subcategoria === activeOrg;
@@ -892,40 +1287,41 @@ function render() {
     grid.innerHTML = '<div class="empty"><strong>Sin resultados</strong>Prueba con otro término o categoría.</div>';
     return;
   }
-  grid.innerHTML = filtered.map(r => `
-    <div class="card" onclick="openModal(${r.id})">
-      <div class="card-thumb ${CAT_COLOR[r.categoria] || 'color-rojo'}">
-        ${r.emoji || CAT_EMOJI[r.categoria] || '🍴'}
-        <span class="card-type-badge">${TYPE_LABEL[r.tipo] || r.tipo}</span>
-      </div>
-      <div class="card-body">
-        <div class="card-cat">${CAT_LABELS_PLAIN[r.categoria] || r.categoria}${r.subcategoria ? ' · ' + r.subcategoria : ''}</div>
-        <div class="card-name">${r.nombre}</div>
-        <div class="card-tags">
-          ${r.dificultad ? `<span class="tag">${r.dificultad}</span>` : ''}
-          ${r.porciones ? `<span class="tag">${r.porciones} porciones</span>` : ''}
-          ${r.tiempoCoccion ? `<span class="tag">⏱ ${r.tiempoCoccion}</span>` : ''}
+
+  grid.innerHTML = filtered.map(r => {
+    const isCooked = cocidas.has(r.id);
+    return `
+      <div class="card" onclick="openModal(${r.id})">
+        <div class="card-thumb ${CAT_COLOR[r.categoria] || 'color-rojo'}">
+          ${r.emoji || CAT_EMOJI[r.categoria] || '🍴'}
+          <span class="card-type-badge">${TYPE_LABEL[r.tipo] || r.tipo}</span>
+          ${isCooked ? '<span class="card-cooked-dot">✓</span>' : ''}
         </div>
+        <div class="card-body">
+          <div class="card-cat">${CAT_LABELS_PLAIN[r.categoria] || r.categoria}${r.subcategoria ? ' · ' + r.subcategoria : ''}</div>
+          <div class="card-name${isCooked ? ' cooked-name' : ''}">${r.nombre}</div>
+          <div class="card-tags">
+            ${r.dificultad ? `<span class="tag">${r.dificultad}</span>` : ''}
+            ${r.porciones ? `<span class="tag">${r.porciones} porciones</span>` : ''}
+            ${r.tiempoCoccion ? `<span class="tag">⏱ ${r.tiempoCoccion}</span>` : ''}
+          </div>
+        </div>
+        <div class="card-arrow">›</div>
       </div>
-      <div class="card-arrow">›</div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 }
 
-function setCat(c) {
-  activeCat = c;
-  activeOrg = 'Todos'; // al cambiar de categoría, resetear el filtro de origen
-  render();
-}
+function setCat(c) { activeCat = c; activeOrg = 'Todos'; render(); }
+function setOrg(s) { activeOrg = s; render(); }
 
-function setOrg(s) {
-  activeOrg = s;
-  render();
-}
+// ── MODAL DETALLE ──────────────────────────────────────────
 
 function openModal(id) {
   const r = recipes.find(x => x.id === id);
   if (!r) return;
+  const isCooked = cocidas.has(r.id);
+
   let html = `
     <div class="modal-handle"><div></div></div>
     <div class="modal-header">
@@ -936,7 +1332,10 @@ function openModal(id) {
     <div class="badges">
       <span class="badge">${CAT_LABELS_PLAIN[r.categoria] || r.categoria}</span>
       ${r.subcategoria ? `<span class="badge-sub">${r.subcategoria}</span>` : ''}
-    </div>`;
+    </div>
+    <button class="btn-cooked ${isCooked ? 'done' : 'pending'}" onclick="toggleCocinada(${r.id})">
+      ${isCooked ? '✓&nbsp; Ya la he cocinado' : '○&nbsp; Marcar como cocinada'}
+    </button>`;
 
   const metas = [];
   if (r.tiempoPrep) metas.push(`⏱ Prep: ${r.tiempoPrep}`);
