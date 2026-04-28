@@ -2191,5 +2191,32 @@
       "Se conservará tapado en la nevera durante 1 semana."
     ],
     "notas": "Acompañamiento esencial para las pupusas. El jalapeño es opcional pero recomendable si se quiere un toque picante."
+  },
+  {
+    "id": 69,
+    "nombre": "Pasta de pimiento rojo picante (Harissa)",
+    "categoria": "Salsa",
+    "subcategoria": "Cocina del Magreb",
+    "emoji": "🌶️",
+    "tipo": "texto",
+    "historia": "La harissa es una pasta de guindilla picante originaria del Magreb, concretamente de Túnez, aunque se ha extendido por todo el norte de África y el Oriente Próximo. Su nombre proviene del árabe «harasa», que significa «machacar» o «triturar», en referencia a la técnica tradicional de elaboración en mortero. En Túnez es casi un alimento básico: se usa como condimento, como base para guisos, mezclada con aceite de oliva para mojar pan y como acompañamiento del cuscús, el plato nacional. Cada región y familia tiene su propia versión, variando la intensidad del picante, las especias y las hierbas aromáticas. El chile llegó al Magreb en el siglo XVI gracias a los comerciantes españoles y portugueses que lo trajeron desde América. Hoy en día la harissa se ha popularizado en todo el mundo como salsa gourmet y se puede encontrar en supermercados de prácticamente cualquier país.",
+    "ingredientes": [
+      "125g de chiles rojos secos",
+      "1 cucharada de menta, albahaca u orégano seco",
+      "1 cucharada de cilantro en polvo",
+      "1 cucharada de comino en polvo",
+      "1 cucharadita de semillas de anís o hinojo, tostadas y machacadas",
+      "10 dientes de ajo, pelados y picados",
+      "125ml de aceite de oliva virgen",
+      "1 cucharadita de sal"
+    ],
+    "pasos": [
+      "Lavamos los chiles, los escurrimos, los cortamos en trocitos y los ponemos en remojo durante 1 hora.",
+      "Una vez bien rehidratados, los escurrimos y los trituramos junto con el resto de ingredientes.",
+      "Añadimos el aceite poco a poco.",
+      "Guardamos en un tarro de vidrio esterilizado, cubrimos con una capa de aceite de oliva y lo cerramos.",
+      "Se puede conservar en la nevera hasta seis meses."
+    ],
+    "notas": "Para 1 tarro de 500ml. Ideal como condimento, para mojar pan o como base de guisos."
   }
 ]
