@@ -2057,5 +2057,139 @@
       "En un bol grande, poner los mangos, las judías verdes y los tomates. Añadir la salsa y remover bien. Poner los cacahuetes por encima."
     ],
     "notas": "Receta de Aula Gastronómica Barcelona. El mango verde aporta el crujiente y la acidez; el maduro añade dulzura. Ajustar el nivel de picante con la cantidad de chiles."
+  },
+  {
+    "id": 65,
+    "nombre": "Briuats de frutos secos y miel",
+    "categoria": "Postre",
+    "subcategoria": "Repostería árabe",
+    "emoji": "🍯",
+    "tipo": "texto",
+    "historia": "El briuat (también escrito briouat; en árabe بريوات; bric en Túnez, bourak en Argelia, bureka en Libia, börek en Turquía) es un pastel frito o al horno típico de Marruecos y del norte de África, con forma triangular o cilíndrica. Son una especie de empanadillas elaboradas con una pasta filo de sémola de trigo duro llamada warqa, rellena con una gran variedad de ingredientes. Las variantes más populares son los briuats rellenos de almendras cubiertos de miel y los briuats de pollo, parientes de los rollitos de primavera de la cocina oriental. En Marruecos se preparan habitualmente para celebraciones y festividades como bodas o el Ramadán, y son un símbolo de la rica tradición repostera del Magreb. La combinación de frutos secos, especias aromáticas y miel representa siglos de influencia árabe, bereber y andalusí en la gastronomía norteafricana. Su elaboración es un acto social: en muchos hogares marroquíes se preparan en familia, con cada miembro encargado de doblar y cerrar los delicados triángulos de pasta.",
+    "ingredientes": [
+      "--- Para el relleno ---",
+      "300g de frutos secos sin piel (almendras, nueces, anacardos, pistachos, cacahuetes...)",
+      "50g de azúcar glas",
+      "1 cucharada de canela",
+      "3 cucharaditas de agua de azahar",
+      "50g de mantequilla fundida o muy blanda",
+      "--- Para acabar ---",
+      "30g de mantequilla fundida",
+      "1 paquete de pasta filo",
+      "Agua",
+      "Semillas de sésamo",
+      "150g de miel"
+    ],
+    "pasos": [
+      "Trituramos los frutos secos sin excedernos, para que no empiecen a soltar aceite. (También podéis usar almendra en polvo y mezclarla con otro fruto seco triturado en trocitos pequeños, que aportará textura.)",
+      "En un bol, mezclamos los frutos secos, la canela, el azúcar, el agua de azahar y la mantequilla hasta obtener una masa homogénea. Dejamos reposar 10 minutos y vamos haciendo bolitas del tamaño de una nuez. Reservamos.",
+      "Para montar los briuats, cortamos la pasta filo en láminas alargadas, la pintamos con mantequilla fundida y colocamos en uno de los extremos una cucharada del relleno. (Para evitar que el paquetito se rompa, es mejor usar dos láminas a la vez.)",
+      "Vamos haciendo un envoltorio triangular y cerramos el paquetito con un poco de agua.",
+      "Colocamos en una bandeja de horno y los horneamos a 180ºC durante 10-15 minutos o hasta que estén dorados.",
+      "Mientras tanto, derretimos la miel a fuego muy lento.",
+      "Una vez listos los briuats, los sumergimos en la miel y los dejamos enfriar sobre una rejilla.",
+      "Antes de que se enfríen, les ponemos un poco de sésamo (o pistacho) por encima.",
+      "Se consumen fríos... ¡si podéis esperar!"
+    ],
+    "notas": "Para 20-25 unidades. ¡El relleno puede ser dulce o salado: infinitas combinaciones!"
+  },
+  {
+    "id": 66,
+    "nombre": "Baos (bollos chinos al vapor)",
+    "categoria": "Entrante",
+    "subcategoria": "Cocina asiática",
+    "emoji": "🥟",
+    "tipo": "texto",
+    "historia": "Los baozi (包子), conocidos popularmente como baos, son bollos rellenos al vapor originarios de China con más de 1.800 años de historia. Según la leyenda, fueron inventados por el estratega militar Zhuge Liang durante la dinastía Han del Este, quien los creó como sustituto de las ofrendas rituales. Con el tiempo se convirtieron en un alimento cotidiano en toda China y se extendieron por Asia, dando lugar a múltiples variantes regionales: los xiaolongbao shanghaineses, los nikuman japoneses o los siopao filipinos. El relleno tradicional suele ser de cerdo, pero existen versiones vegetarianas, de marisco y dulces. En esta receta se incorporan espinacas frescas en la masa, lo que le da un llamativo color verde y un toque nutritivo, combinado con un relleno umami de cerdo con salsas asiáticas fermentadas. Los baos se han popularizado enormemente en todo el mundo gracias a la cocina fusión y a los restaurantes de dim sum.",
+    "ingredientes": [
+      "--- Masa ---",
+      "500g de harina 00",
+      "7g de levadura de panadero seca",
+      "7g de azúcar",
+      "75g de espinacas frescas",
+      "200ml de agua tibia aprox. (*si no se usan espinacas, solo 130ml)",
+      "7g de sal",
+      "50g de aceite de girasol",
+      "--- Relleno ---",
+      "300g de carne de cerdo picada",
+      "1 cucharada de vino chino de cocina",
+      "1 cucharada de salsa de soja oscura",
+      "1 cucharada de miso",
+      "1 cucharada de salsa de ostras",
+      "1-2 chiles picados",
+      "3 cucharadas de salsa de soja",
+      "2 dientes de ajo picados",
+      "1 cucharada de jengibre fresco picado",
+      "100g de setas picadas pequeñas",
+      "4-5 cebolletas de primavera picadas"
+    ],
+    "pasos": [
+      "Para el relleno: en una sartén con aceite, doramos la carne de cerdo y cuando esté ligeramente dorada añadimos el vino chino, la salsa de soja oscura, el miso, la salsa de ostras, los chiles, la salsa de soja, el ajo y el jengibre. Dejamos cocinar bien y añadimos las setas picadas. Cocinamos 3 minutos y añadimos las cebolletas. Dejamos enfriar antes de rellenar los baos.",
+      "Para la masa: en un bol pequeño, mezclamos la levadura, el azúcar y el agua tibia. Dejamos reposar hasta que se active (5-10 minutos).",
+      "Trituramos las espinacas en crudo y las mezclamos con la harina, la sal y la levadura activa con el agua y el aceite. Amasamos bien hasta obtener una masa elástica y homogénea.",
+      "Tapamos y dejamos levar hasta que doble su volumen (1 hora aprox.).",
+      "Una vez levada la masa, la aplastamos para sacar el aire y la aplanamos con un rodillo hasta 1/2 cm de grosor.",
+      "Cortamos en redondas con un molde o un vaso. También podemos hacer un rulo y cortar porciones que aplanaremos con el rodillo, más por los bordes que por el centro.",
+      "Ponemos una cucharada de relleno en el centro, estiramos el borde hacia afuera y lo plegamos sobre sí mismo. Repetimos dando la vuelta hasta tener todo el borde recogido. Debe quedar un pequeño agujero en el centro.",
+      "Los colocamos encima de un cuadrado de papel de horno y los dejamos reposar 30 minutos.",
+      "Cocemos al vapor durante 15 minutos."
+    ],
+    "notas": "Para unos 30 baos. *Si no se usan espinacas, reducir el agua a 130ml."
+  },
+  {
+    "id": 67,
+    "nombre": "Pupusas (El Salvador)",
+    "categoria": "Principal",
+    "subcategoria": "Cocina latinoamericana",
+    "emoji": "🫓",
+    "tipo": "texto",
+    "historia": "Las pupusas son el plato nacional de El Salvador, declaradas patrimonio cultural gastronómico del país en 2005. Su origen se remonta a las culturas precolombinas del territorio salvadoreño, especialmente a los pipiles y lencas, que ya elaboraban tortillas de maíz rellenas antes de la llegada de los españoles. La palabra 'pupusa' proviene del náhuatl 'pupushawa', que significa 'algo relleno y abultado'. Durante siglos fueron alimento cotidiano de las comunidades indígenas y campesinas. Hoy en día son el símbolo culinario más reconocible de El Salvador, consumidas en pupuserías —restaurantes especializados— a cualquier hora del día. Los rellenos más tradicionales son el queso, los frijoles refritos y el chicharrón, aunque también se pueden combinar entre ellos. Se sirven siempre acompañadas de curtido, una ensalada encurtida de col que aporta frescor y acidez, y de salsa roja de tomate.",
+    "ingredientes": [
+      "--- Masa (para unas 18 pupusas) ---",
+      "450g de harina de maíz (masa harina / maseca) (equivalente a 4 tazas)",
+      "2 cucharaditas de sal",
+      "720ml de agua (equivalente a 3 tazas)",
+      "--- Opciones de relleno ---",
+      "Queso mozzarella u similar (queso oaxaca)",
+      "Chicharrón: carne de cerdo frita con aceite, sal y pimienta, triturada después con pimiento verde, cebolla y tomate",
+      "Frijoles refritos: alubia roja cocinada con aceite, cebolla, ajo, comino y orégano, y machacada"
+    ],
+    "pasos": [
+      "Preparamos la masa mezclando todos los ingredientes en un bol. Nos aseguramos de que la masa no quede seca.",
+      "Preparamos el relleno que hayamos escogido.",
+      "Para montar las pupusas, nos humedecemos las manos con un poco de aceite y cogemos una porción un poco más pequeña que una pelota de tenis.",
+      "La aplanamos, ponemos una cucharada de relleno más queso y la cerramos. La redondeamos y la aplanamos hasta obtener una torta.",
+      "Cocinamos en la sartén por los dos lados con un poco de aceite.",
+      "Acompañamos con curtido."
+    ],
+    "notas": "Se pueden combinar varios rellenos. El curtido es imprescindible para acompañar."
+  },
+  {
+    "id": 68,
+    "nombre": "Curtido (América Central)",
+    "categoria": "Acompañamiento",
+    "subcategoria": "Cocina latinoamericana",
+    "emoji": "🥗",
+    "tipo": "texto",
+    "historia": "El curtido es una preparación fermentada o encurtida de verduras propia de la cocina centroamericana, especialmente de El Salvador, Honduras y Guatemala. Su origen se encuentra en las técnicas de conservación de alimentos traídas por los colonizadores españoles en el siglo XVI, que se mezclaron con las tradiciones indígenas de fermentación. Es el acompañamiento inseparable de las pupusas salvadoreñas, y su acidez y frescura equilibran perfectamente la densidad del relleno. La técnica es similar al chucrut europeo o al kimchi coreano: las verduras se tratan con sal y vinagre para iniciar un proceso de fermentación que las conserva y potencia su sabor. A diferencia del kimchi, el curtido se prepara rápidamente y puede consumirse a los 30 minutos, aunque su sabor mejora notablemente con varias horas de reposo en la nevera. En El Salvador, cada pupusería tiene su propia receta secreta de curtido, ajustando la acidez, el picante o las especias según la tradición familiar.",
+    "ingredientes": [
+      "1 col pequeña (verde o roja), cortada en juliana",
+      "1 cebolla, pelada y cortada en juliana",
+      "2-3 zanahorias, peladas y ralladas por el rallador grueso",
+      "Agua hirviendo",
+      "150ml de vinagre",
+      "1 cucharada de orégano",
+      "2 cucharadas de sal",
+      "Jalapeño picado (opcional)",
+      "Pimienta negra (opcional)"
+    ],
+    "pasos": [
+      "Ponemos todas las verduras, excepto la cebolla, en un bol y las cubrimos con agua hirviendo.",
+      "Dejamos reposar 5 minutos y las escurrimos.",
+      "Dejamos que se refresquen y las aliñamos con la sal, el vinagre y la pimienta (si la usamos) y añadimos la cebolla.",
+      "Dejamos reposar en la nevera durante 30 minutos.",
+      "Se conservará tapado en la nevera durante 1 semana."
+    ],
+    "notas": "Acompañamiento esencial para las pupusas. El jalapeño es opcional pero recomendable si se quiere un toque picante."
   }
 ]
