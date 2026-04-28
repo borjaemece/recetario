@@ -724,6 +724,7 @@ header h1 {
           <option value="Desayuno">Desayuno</option>
           <option value="Bebida">Bebida</option>
           <option value="Salsa">Salsa, aliño o condimento</option>
+          <option value="Acompañamiento">Acompañamiento</option>
           <option value="Otro">Otro</option>
         </select>
       </div>
@@ -749,6 +750,9 @@ header h1 {
         <option value="Hofmann">Hofmann</option>
         <option value="Web">Web</option>
         <option value="Cocina india">Cocina india</option>
+        <option value="Cocina asiática">Cocina asiática</option>
+        <option value="Cocina latinoamericana">Cocina latinoamericana</option>
+        <option value="Repostería árabe">Repostería árabe</option>
       </select>
     </div>
 
@@ -793,16 +797,16 @@ header h1 {
 <button class="fab" onclick="openForm()" aria-label="Añadir receta">+</button>
 
 <script>
-const CATS = ['Todas', 'Entrante', 'Principal', 'Postre', 'Desayuno', 'Bebida', 'Salsa', 'Otro'];
+const CATS = ['Todas', 'Entrante', 'Principal', 'Postre', 'Desayuno', 'Bebida', 'Salsa', 'Acompañamiento', 'Otro'];
 const CAT_LABELS = {
   Todas: 'Todas', Entrante: '🥗 Entrantes', Principal: '🍝 Principales',
   Postre: '🍮 Postres', Desayuno: '🥐 Desayunos', Bebida: '🥤 Bebidas',
-  Salsa: '🫙 Salsas', Otro: '📌 Otros'
+  Salsa: '🫙 Salsas', Acompañamiento: '🥦 Acompañamientos', Otro: '📌 Otros'
 };
 const CAT_LABELS_PLAIN = {
   Todas: 'Todas', Entrante: 'Entrantes', Principal: 'Principales',
   Postre: 'Postres', Desayuno: 'Desayunos', Bebida: 'Bebidas',
-  Salsa: 'Salsas y aliños', Otro: 'Otros'
+  Salsa: 'Salsas y aliños', Acompañamiento: 'Acompañamientos', Otro: 'Otros'
 };
 const CAT_EMOJI = {
   Entrante: '🥗', Principal: '🍽️', Postre: '🍮',
@@ -817,7 +821,8 @@ const TYPE_LABEL = { texto: 'Escrita', enlace: 'Web', pdf: 'PDF' };
 const SUBCATS = [
   'Cocina asiática picante','Cocina taiwanesa','Cocina tailandesa','Cocina turca',
   'Cocina coreana','Cocina mexicana','Cocina siria','Cocina del Magreb',
-  'Dumplings','Hofmann','Web','Cocina india'
+  'Dumplings','Hofmann','Web','Cocina india',
+  'Cocina asiática','Cocina latinoamericana','Repostería árabe'
 ];
 
 let recipes = [];
