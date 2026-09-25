@@ -2697,5 +2697,37 @@
       "Una vez emplatadas, añadir un chorro de aceite y un poco de cilantro picado."
     ],
     "notas": "Se puede encontrar en casi todas las tiendas de productos, harinas, etc. También en tiendas de alimentación halal."
+  },
+  {
+    "id": 84,
+    "nombre": "Banana bread con chocolate",
+    "categoria": "Postre",
+    "subcategoria": "Repostería americana",
+    "emoji": "🍌",
+    "tipo": "texto",
+    "historia": "El banana bread nació en Estados Unidos durante la Gran Depresión de los años 30, cuando los amas de casa encontraron la forma de aprovechar los plátanos demasiado maduros para comer directamente. Con la popularización del bicarbonato de sodio como leudante en los hogares, las recetas sin levadura se volvieron accesibles y el banana bread se convirtió en un clásico de la repostería casera americana. Desde entonces ha evolucionado en mil versiones: con nueces, con especias, con chips de chocolate... La versión con chocolate troceado combina el dulzor natural del plátano maduro con la intensidad del cacao, y se ha convertido en una de las más populares en todo el mundo.",
+    "ingredientes": [
+      "3 plátanos maduros",
+      "1 huevo grande",
+      "150g de azúcar moreno",
+      "90g de mantequilla derretida (o aceite neutro)",
+      "1 cucharadita de extracto de vainilla",
+      "200g de harina de trigo",
+      "1 cucharadita de bicarbonato de sodio",
+      "1/2 cucharadita de sal",
+      "1/2 cucharadita de canela (opcional)",
+      "100g de chocolate troceado"
+    ],
+    "pasos": [
+      "Precalentar el horno a 175°C (calor arriba y abajo, sin ventilador). Engrasar y enharinar un molde de plumcake de 20-22 cm.",
+      "Machacar bien los plátanos maduros con un tenedor hasta obtener un puré con algunos trocitos.",
+      "Añadir el huevo, el azúcar moreno, la mantequilla derretida y el extracto de vainilla. Mezclar con varillas hasta integrar.",
+      "Tamizar la harina, el bicarbonato, la sal y la canela sobre la mezcla húmeda. Mezclar con espátula solo hasta que no queden restos de harina.",
+      "Enharinar ligeramente el chocolate troceado y añadirlo a la masa, mezclando con movimientos envolventes.",
+      "Verter la masa en el molde y hornear 50-60 minutos, hasta que un palillo insertado en el centro salga con solo alguna miga húmeda (no masa cruda ni chocolate fundido).",
+      "Dejar reposar en el molde 10 minutos antes de desmoldar.",
+      "Pasar el bizcocho a una rejilla y dejarlo enfriar completamente (al menos 1-2 horas) antes de cortarlo."
+    ],
+    "notas": "⚠️ Si solo tienes 2 plátanos, sustituye el tercero por 60g de yogur natural para mantener la humedad de la masa. Trucos contra la humedad excesiva: usa solo plátanos medianos, no mezcles de más al añadir la harina, enharina ligeramente el chocolate troceado antes de incorporarlo para que no se hunda, verifica la cocción con palillo, y SIEMPRE deja enfriar del todo antes de cortar."
   }
 ]
