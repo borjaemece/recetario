@@ -2762,5 +2762,35 @@
       "Dejar enfriar un par de minutos en las bandejas antes de trasladar a una rejilla."
     ],
     "notas": "Receta de NYT Cooking (Chewy Brownie Cookies). El golpe de las bandejas contra la encimera a mitad del horneado es el truco para conseguir la superficie irregular y la textura fudgy interior. Es importante trabajar rápido al porcionar para que la masa no pierda el brillo."
+  },
+  {
+    "id": 86,
+    "nombre": "Brownies de Katharine Hepburn",
+    "categoria": "Postre",
+    "subcategoria": "Repostería americana",
+    "emoji": "🟫",
+    "tipo": "texto",
+    "historia": "Katharine Hepburn (1907-2003), una de las grandes actrices de Hollywood, era conocida tanto por su carácter independiente como por su discreción. En 1975 compartió esta receta en una entrevista, presentándola como su brownie personal. Lo que la hace legendaria —aparte de la fuente— es su austeridad: apenas 30g de harina para un molde entero, lo que produce un brownie extraordinariamente denso y húmedo, más cercano al fudge que a un bizcocho. La receta circuló durante décadas de mano en mano antes de convertirse en un clásico de la repostería casera americana, citada en libros, revistas y blogs como prueba de que los mejores brownies no necesitan complicaciones.",
+    "ingredientes": [
+      "42g de cacao puro en polvo (o 57g de chocolate negro sin azúcar)",
+      "113g de mantequilla sin sal",
+      "200g de azúcar blanco",
+      "2 huevos",
+      "30g de harina de trigo",
+      "1 cucharadita de extracto de vainilla",
+      "Una pizca de sal",
+      "Un puñado de nueces troceadas (opcional)"
+    ],
+    "pasos": [
+      "Precalentar el horno a 163°C. Engrasar bien un molde cuadrado de 20 cm.",
+      "Derretir la mantequilla con el cacao (o el chocolate troceado) en un cazo a fuego medio-bajo, removiendo constantemente con las varillas hasta obtener una mezcla homogénea.",
+      "Retirar del fuego y añadir el azúcar, removiendo bien.",
+      "Incorporar los huevos y la vainilla, batiendo hasta integrar.",
+      "Añadir la harina, la sal y las nueces (si se usan). Mezclar bien.",
+      "Verter la masa en el molde engrasado.",
+      "Hornear unos 40 minutos, hasta que un palillo insertado en el centro salga limpio.",
+      "Dejar enfriar completamente antes de cortar en cuadrados. Son muy fudgy y pueden ser difíciles de cortar limpiamente; usar un cuchillo afilado y una espátula para despegarlos del molde."
+    ],
+    "notas": "Receta atribuida a Katharine Hepburn, compartida en una entrevista en 1975. La clave es la mínima cantidad de harina (solo 30g), que es lo que les da esa textura extremadamente densa y húmeda. No los saques del molde hasta que estén completamente fríos."
   }
 ]
