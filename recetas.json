@@ -2729,5 +2729,38 @@
       "Pasar el bizcocho a una rejilla y dejarlo enfriar completamente (al menos 1-2 horas) antes de cortarlo."
     ],
     "notas": "⚠️ Si solo tienes 2 plátanos, sustituye el tercero por 60g de yogur natural para mantener la humedad de la masa. Trucos contra la humedad excesiva: usa solo plátanos medianos, no mezcles de más al añadir la harina, enharina ligeramente el chocolate troceado antes de incorporarlo para que no se hunda, verifica la cocción con palillo, y SIEMPRE deja enfriar del todo antes de cortar."
+  },
+  {
+    "id": 85,
+    "nombre": "Brownie cookies",
+    "categoria": "Postre",
+    "subcategoria": "Repostería americana",
+    "emoji": "🍪",
+    "tipo": "texto",
+    "historia": "La brownie cookie es un híbrido nacido de la obsesión americana por los brownies: toda la intensidad y la textura fudgy del brownie clásico, pero en formato galleta portátil. La técnica clave es derretir el chocolate y la mantequilla directamente sobre el cacao en polvo, lo que produce una masa húmeda y brillante —similar a la de un brownie— en lugar de la masa arenosa de una galleta convencional. El toque de café espresso en polvo, imperceptible por sí solo, amplifica la profundidad del chocolate. Este estilo de galleta se popularizó en Estados Unidos a partir de los años 2000 en pastelerías artesanales y blogs de repostería, y recetas como esta de NYT Cooking las han convertido en una referencia de la repostería casera americana.",
+    "ingredientes": [
+      "113g de chocolate negro picado fino (semisweet o bittersweet)",
+      "42g de cacao puro en polvo (sin azúcar)",
+      "1 cucharadita de café espresso en polvo",
+      "113g de mantequilla sin sal",
+      "2 huevos grandes, a temperatura ambiente",
+      "150g de azúcar blanco",
+      "107g de azúcar moreno oscuro (bien compacto)",
+      "1 cucharadita de sal fina",
+      "2 cucharaditas de extracto de vainilla",
+      "90g de harina de trigo",
+      "Sal en escamas para acabar"
+    ],
+    "pasos": [
+      "Precalentar el horno a 175°C. Forrar 2 bandejas grandes con papel de horno.",
+      "Poner el chocolate picado, el cacao y el café en polvo en un bol resistente al calor. Derretir la mantequilla en un cazo a fuego medio-bajo hasta que burbujee sin dorarse, unos 3 minutos, y verterla sobre la mezcla de chocolate. Sin remover, dejar reposar para que el calor residual derrita el chocolate mientras se baten los huevos con el azúcar.",
+      "Poner los huevos, los dos azúcares y la sal en el bol de la batidora con el accesorio de varillas. Batir a velocidad media-alta hasta que la mezcla esté esponjosa y el azúcar haya empezado a disolverse, 3-5 minutos.",
+      "Remover la mezcla de chocolate hasta que quede brillante y homogénea. Si quedan trozos sin fundir, calentar en el microondas en intervalos de 10 segundos hasta obtener una mezcla completamente lisa.",
+      "Con la batidora a velocidad baja, añadir el extracto de vainilla y después la mezcla de chocolate. Raspar los bordes y el fondo del bol. Añadir la harina y mezclar a velocidad baja hasta que queden solo algunos hilitos de harina; terminar de integrarla con una espátula para no sobremezclar. La masa debe ser brillante y parecerse a una masa de brownie muy espesa.",
+      "Con una cuchara dosificadora de 2 cucharadas (30ml), porcionar la masa en montoncitos sobre las bandejas, dejando al menos 5 cm entre cada uno (salen unas 18 galletas). Trabajar con rapidez para que las galletas mantengan el brillo al hornearse.",
+      "Hornear 8 minutos, hasta que las galletas hayan empezado a extenderse y tengan una superficie exterior brillante. Sacar del horno y golpear las bandejas contra la encimera un par de veces para crear una superficie irregular y una textura más fudgy. Añadir sal en escamas y devolver al horno 2 minutos más, hasta que estén brillantes y ligeramente hinchadas.",
+      "Dejar enfriar un par de minutos en las bandejas antes de trasladar a una rejilla."
+    ],
+    "notas": "Receta de NYT Cooking (Chewy Brownie Cookies). El golpe de las bandejas contra la encimera a mitad del horneado es el truco para conseguir la superficie irregular y la textura fudgy interior. Es importante trabajar rápido al porcionar para que la masa no pierda el brillo."
   }
 ]
