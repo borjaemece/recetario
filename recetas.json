@@ -3366,5 +3366,47 @@
       "Versión coreana: en una sartén wok, calentar el aceite y sofreír el ajo y el jengibre 1 minuto. Añadir la salsa y llevar a ebullición. Incorporar la berenjena y cocinar hasta que esté tierna (unos 8 minutos). Acabar con la cebolleta y las semillas de sésamo."
     ],
     "notas": "Receta del curso de dumplings del mundo de Cuinant Cultures (Muntsa Holgado). También se puede precocinar la berenjena al vapor y después saltearla solo 1 minuto con la salsa en el wok; en ese caso, añadir la maicena directamente a la salsa. La berenjena asiática (más fina y larga que la mediterránea) absorbe menos aceite y queda más tierna. La sal previa es importante para eliminar el exceso de agua."
+  },
+  {
+    "id": 103,
+    "nombre": "Flamiche de puerro",
+    "categoria": "Principal",
+    "subcategoria": "Hofmann",
+    "emoji": "🧅",
+    "tipo": "texto",
+    "historia": "La flamiche es una especialidad de la región de Picardía (norte de Francia) y de Bélgica, con origen medieval. Su nombre deriva del flamenco 'vlamiche', que significa 'pastel de llama', en referencia a que se cocía originariamente sobre las brasas. La flamiche au poireau (flamiche de puerro) es la versión más clásica, tradicional de la ciudad de Dinant en Bélgica. Se distingue por su masa brisa crujiente, el relleno cremoso de puerros y bechamel, y el característico enrejado de masa que cubre la superficie. Es un plato emblemático de la cocina flamenca y del norte de Francia, donde se sirve tanto de entrante como de plato principal acompañado de ensalada verde.",
+    "ingredientes": [
+      "Para la masa brisa:",
+      "200g de harina floja",
+      "4g de sal",
+      "100g de mantequilla",
+      "50g de agua",
+      "Para el relleno:",
+      "30g de mantequilla",
+      "250g de puerro, en emincé",
+      "100g de cebolla, en emincé",
+      "35g de emental rallado (mitad para el relleno, mitad para acabar)",
+      "1 huevo + 1 yema",
+      "Sal y pimienta",
+      "Para la bechamel:",
+      "25g de mantequilla",
+      "25g de harina",
+      "200g de leche",
+      "Sal y nuez de moscada"
+    ],
+    "pasos": [
+      "Masa brisa: trabajar la mantequilla con la harina y la sal hasta obtener una textura arenosa (sablage). Añadir el agua y amasar lo justo hasta que ligue. Hacer una bola y dejar reposar 30 minutos en nevera.",
+      "Bechamel: fundir la mantequilla, añadir la harina y cocer a fuego suave sin que coja color (roux blanco). Añadir la leche caliente en varias tandas removiendo constantemente. Hervir y cocer unos segundos. Salar y condimentar con nuez de moscada.",
+      "Estirar el 80% de la masa brisa y forrar un molde de 20 cm de diámetro. Cocer al blanco con carga a 180°C unos 10 minutos. Retirar la carga y cocer unos minutos más si es necesario.",
+      "Estirar el 20% restante de masa, pintar con huevo y dejar reposar en nevera.",
+      "Relleno: rehogar los puerros y la cebolla en la mantequilla, tapados, a fuego suave. Una vez pochados, retirar del fuego y salpimentar.",
+      "Mezclar el pochado con la bechamel, la yema, el huevo entero y la mitad del emental. Rectificar la condimentación.",
+      "Verter el relleno en la masa cocida al blanco y esparcir de forma uniforme. Espolvorear con el resto del emental.",
+      "Cortar la masa estirada en tiras de 1 cm de ancho como máximo.",
+      "Colocar las tiras formando un enrejado cruzado en rombos sobre el relleno.",
+      "Hornear a 180°C unos 20-25 minutos, hasta que el enrejado esté dorado.",
+      "Retirar, desmoldar encima de una rejilla y servir tibio."
+    ],
+    "notas": "Receta de la escuela Hofmann. El pochado de los puerros debe hacerse tapado y a fuego muy suave para que suden sin coger color. El enrejado de masa se hace con la masa pintada con huevo (así queda brillante). Es importante dejar reposar la masa en frío antes de trabajarla; si se agrieta al estirar, necesita más reposo."
   }
 ]
