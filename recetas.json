@@ -2980,5 +2980,165 @@
       "Se conserva bien fuera de la nevera durante 2 meses. El sabor irá madurando con el tiempo."
     ],
     "notas": "Receta del curso de cocina de Sichuan de Cuinant Cultures (Muntsa Holgado). La técnica de verter el aceite en dos tiempos (templado primero, muy caliente después) garantiza que el sésamo y la pimienta liberen sus aromas sin quemarse. Con semillas da un aceite más texturoso; sin semillas, más límpido. Es el condimento base de los fideos Dan-Dan (receta 87) y los fideos Suanla fen (receta 88)."
+  },
+  {
+    "id": 92,
+    "nombre": "Rábano encurtido (Xiaocai, Sichuan)",
+    "categoria": "Entrante",
+    "subcategoria": "Cocina de Sichuan",
+    "emoji": "🥒",
+    "tipo": "texto",
+    "historia": "El xiaocai (小菜, xiǎo cài, 'plato pequeño') es el término genérico para los aperitivos y encurtidos que acompañan prácticamente todas las comidas en Sichuan. El rábano daikon encurtido con pimienta de Sichuan y aceite picante es uno de los más comunes: rápido de preparar, refrescante y con la firma picante-entumecida del malatang. Los encurtidos ocupan un lugar central en la gastronomía china, y en Sichuan existe toda una tradición de pao cai (泡菜), verduras fermentadas en tarro que se mantienen durante semanas. Esta versión es una variante rápida —sin fermentación— que se puede preparar y consumir el mismo día.",
+    "ingredientes": [
+      "1 rábano daikon de unos 500g, pelado y cortado en medias lunas de 1/2 cm",
+      "2 cucharaditas de sal",
+      "Para la salsa:",
+      "2 cucharadas de azúcar",
+      "2 cucharadas de salsa de soja",
+      "2 cucharaditas de vinagre de arroz o de Chinkiang",
+      "4 cucharadas de aceite picante Holy Trinity Sichuan + 1 cucharada de poso (sedimento)",
+      "1/2 cucharadita de pimienta de Sichuan tostada y triturada"
+    ],
+    "pasos": [
+      "Pelar el daikon y cortarlo en medias lunas de aproximadamente 1/2 cm de grosor.",
+      "Ponerlo en un bol, añadir la sal y remover bien. Masajear el rábano para que la sal penetre por todas partes.",
+      "Dejar reposar 40 minutos.",
+      "Escurrir el rábano y exprimirlo bien con las manos para eliminar el exceso de agua.",
+      "Ponerlo en un bol limpio y aliñarlo con todos los ingredientes de la salsa. Mezclar bien y servir."
+    ],
+    "notas": "Receta del curso de cocina de Sichuan de Cuinant Cultures (Muntsa Holgado). El poso del aceite picante (el sedimento de chile y sésamo que queda en el fondo del tarro) es la parte más sabrosa; no descartarlo. Se puede preparar con antelación y guardar en la nevera. El rábano debe quedar crujiente, no blando."
+  },
+  {
+    "id": 93,
+    "nombre": "Fideos estirados a mano (La mian)",
+    "categoria": "Principal",
+    "subcategoria": "Cocina de Sichuan",
+    "emoji": "🍜",
+    "tipo": "texto",
+    "historia": "Los fideos estirados a mano (拉面, lā miàn) son una de las técnicas más antiguas y espectaculares de la cocina china, con más de 1.000 años de historia. El término da nombre tanto al proceso (lā = estirar, miàn = fideos) como al resultado: fideos de longitud prácticamente infinita, estirados sin cortes a partir de un único trozo de masa. La elasticidad que permite este proceso depende del gluten bien desarrollado con reposos repetidos. El agua alcalina (kansui), opcional, refuerza esa elasticidad y da a los fideos su característico color amarillento. Los la mian son la base de muchos platos chinos —desde el lamian uigur de Lanzhou hasta el ramen japonés— y se usan en la cocina de Sichuan como base para platos como los fideos Dan-Dan.",
+    "ingredientes": [
+      "400g de harina de trigo tipo 00 o de fuerza",
+      "200ml de agua",
+      "1,5 cucharadas de agua alcalina (kansui, opcional)",
+      "1 cucharadita de sal",
+      "Aceite de oliva o de girasol (para humedecer)"
+    ],
+    "pasos": [
+      "En un bol, mezclar la harina con la sal y añadir el agua poco a poco (y el kansui si se usa), mezclando con una cuchara de madera.",
+      "Amasar brevemente hasta obtener una masa homogénea.",
+      "Tapar y dejar reposar 20 minutos.",
+      "Volver a amasar 2-3 minutos hasta que la masa esté elástica y maleable.",
+      "Tapar y dejar reposar otros 20 minutos.",
+      "Dividir la masa en 8 partes y dar forma de rollito a cada una. Humedecerlos con un poco de aceite para que no se sequen.",
+      "Tapar y dejar reposar 10 minutos.",
+      "Para estirar: hacer rodar cada trozo sobre la superficie de trabajo para activar el gluten. Sujetar los dos extremos y estirar con un movimiento ondulado de arriba a abajo.",
+      "Si se puede, doblar por la mitad y volver a estirar. Repetir el proceso hasta obtener el grosor deseado.",
+      "Si la masa no se deja estirar, amasarla un poco más y dejarla reposar antes de intentarlo de nuevo.",
+      "Cocer los fideos en agua hirviendo 1-2 minutos según el grosor."
+    ],
+    "notas": "Receta del curso de cocina de Sichuan de Cuinant Cultures (Muntsa Holgado). El kansui (agua alcalina) se puede comprar en tiendas asiáticas o sustituir por una solución de bicarbonato (1 cucharadita en 200ml de agua, hervida y enfriada). La clave es no saltarse los reposos: sin ellos el gluten no se relaja y la masa se rompe al estirar."
+  },
+  {
+    "id": 94,
+    "nombre": "Arroz pilaf",
+    "categoria": "Acompañamiento",
+    "emoji": "🍚",
+    "tipo": "texto",
+    "historia": "El pilaf (también llamado pilau, plov o arroz de la fe según la región) es una técnica de cocción del arroz extendida desde el Mediterráneo oriental hasta Asia Central, en la que el grano se sofríe primero en aceite y se cuece después en caldo especiado con tapa hermética. La versión más perfumada con canela, cardamomo y laurel tiene raíces en la cocina persa y se ha extendido a toda la cocina de Oriente Próximo. La clave de este método es que cada grano queda suelto y nacarado, muy diferente del arroz hervido. El nombre popular de 'arroz de la fe' alude a la paciencia que requiere: una vez tapado, no se abre ni se remueve hasta que esté listo.",
+    "ingredientes": [
+      "300ml de arroz basmati",
+      "1 cucharadita de sal",
+      "1 cucharadita de aceite de oliva",
+      "1 cebolla pequeña, pelada y cortada en rodajas finas",
+      "1 palo de canela",
+      "8 granos de cardamomo verde, ligeramente machacados",
+      "1 hoja de laurel",
+      "400ml de agua o caldo de pollo o vegetal (aproximadamente)",
+      "Al gusto: unos hilos de azafrán, granos de pimienta, semillas de cilantro o de hinojo (opcional)"
+    ],
+    "pasos": [
+      "Lavar bien el arroz bajo el grifo hasta que el agua salga clara para eliminar el almidón (opcional pero recomendable).",
+      "En una sartén de hierro o cazuela, calentar el aceite a fuego medio.",
+      "Añadir la cebolla y saltearla 3-4 minutos hasta que empiece a dorarse.",
+      "Añadir el arroz y remover bien durante 2-3 minutos hasta que los granos estén nacarados y transparentes.",
+      "Añadir la canela, el cardamomo y la hoja de laurel. Sofreír 1 minuto.",
+      "Añadir el agua o el caldo y el azafrán si se usa. Llevar a ebullición durante 1 minuto.",
+      "Tapar bien y reducir el fuego al mínimo.",
+      "Cocinar sin remover durante 11 minutos (quedará al dente).",
+      "Retirar del fuego y dejar reposar tapado 15 minutos.",
+      "Separar los granos con un tenedor y servir."
+    ],
+    "notas": "Receta del curso de cocina de Sichuan de Cuinant Cultures (Muntsa Holgado). La medida del arroz es en volumen (vaso/ml), no en peso; usar la misma medida para el líquido aproxima el ratio correcto. No abrir la tapa durante los 11 minutos de cocción ni durante el reposo: el vapor atrapado es lo que termina de cocinar el arroz."
+  },
+  {
+    "id": 95,
+    "nombre": "Sopa de hongo de las nieves (Yin'er tang, Sichuan)",
+    "categoria": "Postre",
+    "subcategoria": "Cocina de Sichuan",
+    "emoji": "🍄",
+    "tipo": "texto",
+    "historia": "La sopa de hongo de las nieves (银耳汤, yín'ěr tāng) es uno de los postres más valorados de la medicina tradicional china, con siglos de historia. El hongo blanco o de las nieves (Tremella fuciformis) es conocido como 'el nido de golondrina de los pobres' por sus propiedades hidratantes similares a las del nido de golondrina, pero mucho más accesible. Es rico en polisacáridos, muy apreciados en la medicina china por sus efectos sobre la piel y el sistema inmunológico. La combinación con jínjoles (dátiles chinos), semillas de loto y bayas de goji es un clásico: cada ingrediente tiene su propio valor nutritivo y medicinal. Se sirve tanto caliente en invierno como fría en verano.",
+    "ingredientes": [
+      "2 cabezas pequeñas de hongo de las nieves (Tremella) deshidratado",
+      "125g de azúcar en roca o cristalizado (o al gusto)",
+      "1-2 cucharadas de bayas de goji",
+      "1 puñado de jínjoles (dátiles chinos) secos",
+      "1 puñado de semillas de loto secas",
+      "2 litros de agua"
+    ],
+    "pasos": [
+      "Hidratar el hongo de las nieves en agua fría durante 15 minutos.",
+      "Una vez hidratado, lavarlo bien y descartar la parte de la base (más dura y amarillenta). Separarlo en trozos pequeños.",
+      "Poner las bayas de goji en un bol aparte con agua fría para que se rehidraten.",
+      "Limpiar el resto de ingredientes. Cortar los jínjoles por la mitad y retirar el hueso si lo tienen.",
+      "En un cazo grande, llevar el agua a ebullición y añadir el hongo, los jínjoles y las semillas de loto, junto con el azúcar.",
+      "Cocinar a fuego lento durante 45 minutos. Espumar la superficie si aparece espuma.",
+      "Al final de la cocción, ajustar el azúcar y añadir las bayas de goji escurridas.",
+      "Servir caliente, o dejar enfriar y servir frío en verano."
+    ],
+    "notas": "Receta del curso de cocina de Sichuan de Cuinant Cultures (Muntsa Holgado). El hongo de las nieves (Tremella fuciformis) se encuentra deshidratado en tiendas de productos asiáticos. Los jínjoles (dátiles chinos, zǎo) aportan dulzor natural y pueden encontrarse en tiendas chinas o herbolarios. Las semillas de loto (莲子, lián zǐ) son opcionales pero habituales en esta sopa; también se encuentran deshidratadas."
+  },
+  {
+    "id": 96,
+    "nombre": "Fideos con setas shiitake (Xiānggū miàn, Sichuan)",
+    "categoria": "Principal",
+    "subcategoria": "Cocina de Sichuan",
+    "emoji": "🍄",
+    "tipo": "texto",
+    "historia": "Los fideos con setas shiitake (香菇面, xiānggū miàn) son un plato profundamente umami de la cocina china, que combina la intensidad de los shiitake secos rehidratados —que liberan un caldo extraordinariamente aromático— con la textura de los hongos frescos. La pasta doubanjiang y la pasta de setas de Sichuan, ambas condimentos fermentados, aportan la profundidad y el picante característicos de la región. Este tipo de fideos con salsa espesa, sin caldo, es habitual en la cocina de Sichuan y recuerda a los dan dan mian: los fideos se mezclan con la salsa al momento de servir, y cada componente —la salsa, los hongos, el pepino fresco, los cacahuetes— cumple una función específica de sabor o textura.",
+    "ingredientes": [
+      "6 setas shiitake secas (o de otra variedad)",
+      "250g de setas frescas, lavadas y cortadas en láminas",
+      "3-4 cm de jengibre, pelado y cortado en bastoncitos",
+      "2 cebolletas de primavera, picadas (separar la parte blanca de la verde)",
+      "2 dientes de ajo, pelados y laminados",
+      "Brotes de ajo (opcional)",
+      "1 cucharada de pasta doubanjiang",
+      "Para la salsa:",
+      "2 cucharadas de salsa de soja",
+      "2 cucharadas de vinagre de arroz o Shaoxing",
+      "1 cucharada de azúcar",
+      "1 cucharada de pasta de setas de Sichuan",
+      "1 cucharada de pasta de sésamo o mantequilla de cacahuete (opcional)",
+      "1-2 cucharadas de copos de pimienta de Sichuan, tostados y machacados",
+      "2-3 cucharadas de aceite de oliva o de girasol",
+      "Para acabar:",
+      "1 cucharada de aceite de sésamo",
+      "Semillas de sésamo o cacahuetes tostados",
+      "Pepino cortado en láminas finas",
+      "Fideos de trigo, cocidos, escurridos y lavados con agua fría"
+    ],
+    "pasos": [
+      "Rehidratar las setas shiitake secas con agua caliente. Una vez hidratadas, escurrirlas y cortarlas en láminas. Reservar el agua de remojo.",
+      "En una sartén, sofreír las setas frescas y las rehidratadas hasta que estén doradas. Apartar y reservar.",
+      "En la misma sartén, sofreír los ajos, el jengibre y la parte blanca de la cebolleta.",
+      "Si se usan brotes de ajo, añadirlos ahora y sofreír.",
+      "Bajar el fuego y añadir la pasta doubanjiang. Cocinar 1 minuto.",
+      "Incorporar la salsa de soja, el vinagre, el azúcar, la pimienta de Sichuan, la pasta de setas y la pasta de sésamo si se usa. Mezclar bien.",
+      "Añadir las setas reservadas y mezclar. Cocinar 2-3 minutos.",
+      "Remover bien hasta que todos los ingredientes estén integrados. Si la salsa queda muy espesa, añadir un poco del agua de remojo de las setas.",
+      "Servir sobre los fideos fríos. Acabar con un chorrito de aceite de sésamo, los cacahuetes o sésamo, el pepino en láminas y la parte verde de la cebolleta."
+    ],
+    "notas": "Receta del curso de cocina de Sichuan de Cuinant Cultures (Muntsa Holgado). La pasta de setas de Sichuan (香菇酱) es una salsa fermentada de hongos que se encuentra en tiendas asiáticas; se puede sustituir por más doubanjiang o por una mezcla de pasta de miso y salsa de ostras. El agua de remojo de las setas secas es muy aromática: guardarla para añadir al plato o para otras preparaciones."
   }
 ]
